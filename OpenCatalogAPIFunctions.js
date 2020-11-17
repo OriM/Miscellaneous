@@ -4,7 +4,7 @@
 var categories = openCatalog.getCategories(where_clause, sortBy, fields);
 categories = [
   {
-    externalID: "123456",
+    path: "Chemicals/Lubricants",
     UUID: "123456",
     description: "lorem ipsum something",
     name: "Screw Driver 20v",
@@ -17,15 +17,57 @@ categories = [
   },
 ];
 
+// Get Category
+// A simplyfied way to interact with a all related to a category object
+var category = openCatalog.getCategory(categoryUUID);
+category = {
+  path: "Chemicals",
+  UUID: "123456",
+  description: "lorem ipsum something",
+  name: "Screw Driver 20v",
+  image: {
+    small: "/path/to/small/image.jpg",
+    large: "/path/to/big/image.jpg",
+  },
+  sortIndex: 0,
+  parentUUID: "",
+  subCategories: [
+    {
+      path: "Chemicals/Lubricants",
+      UUID: "1234567",
+      description: "lorem ipsum something",
+      name: "Lubricants",
+      image: {
+        small: "/path/to/small/image.jpg",
+        large: "/path/to/big/image.jpg",
+      },
+      sortIndex: 0,
+      parentUUID: "123456",
+    },
+    {
+      path: "Chemicals/Hand Care",
+      UUID: "1234568",
+      description: "lorem ipsum something",
+      name: "Hand Care",
+      image: {
+        small: "/path/to/small/image.jpg",
+        large: "/path/to/big/image.jpg",
+      },
+      sortIndex: 0,
+      parentUUID: "123456",
+    },
+  ],
+};
+
 // Get Category Path
 // Needed for Breadcrumbs
 var categoryPath = openCatalog.getCategoryPath(categoryID);
 categoryPath = [
   {
-    externalID: "1111",
+    path: "Chemicals",
     UUID: "1111",
     description: "lorem ipsum something",
-    name: "First",
+    name: "All",
     image: {
       small: "/path/to/small/image.jpg",
       large: "/path/to/big/image.jpg",
@@ -34,10 +76,10 @@ categoryPath = [
     parentUUID: "",
   },
   {
-    externalID: "2222",
+    path: "Chemicals/Lubricants",
     UUID: "2222",
     description: "lorem ipsum something",
-    name: "Second",
+    name: "Chemicals",
     image: {
       small: "/path/to/small/image.jpg",
       large: "/path/to/big/image.jpg",
@@ -46,10 +88,10 @@ categoryPath = [
     parentUUID: "1111",
   },
   {
-    externalID: "3333",
+    path: "Chemicals/Lubricants/Wipes",
     UUID: "3333",
     description: "lorem ipsum something",
-    name: "Third",
+    name: "Hand Care",
     image: {
       small: "/path/to/small/image.jpg",
       large: "/path/to/big/image.jpg",
@@ -64,42 +106,95 @@ categoryPath = [
 var categoryTree = openCatalog.getCategoryTree();
 categoryTree = [
   {
-    category: {
-      externalID: "1111",
-      UUID: "1111",
-      description: "lorem ipsum something",
-      name: "First",
-      image: {
-        small: "/path/to/small/image.jpg",
-        large: "/path/to/big/image.jpg",
-      },
-      sortIndex: 0,
-      parentUUID: "",
+    path: "Chemicals",
+    UUID: "123456",
+    description: "lorem ipsum something",
+    name: "Screw Driver 20v",
+    image: {
+      small: "/path/to/small/image.jpg",
+      large: "/path/to/big/image.jpg",
     },
-    nodes: [
+    sortIndex: 0,
+    parentUUID: "",
+    subCategories: [
       {
-        category: {
-          externalID: "2222",
-          UUID: "2222",
-          description: "lorem ipsum something",
-          name: "Second",
-          image: {
-            small: "/path/to/small/image.jpg",
-            large: "/path/to/big/image.jpg",
-          },
-          sortIndex: 0,
-          parentUUID: "1111",
+        path: "Chemicals/Lubricants",
+        UUID: "1234567",
+        description: "lorem ipsum something",
+        name: "Lubricants",
+        image: {
+          small: "/path/to/small/image.jpg",
+          large: "/path/to/big/image.jpg",
         },
-        nodes: [],
+        sortIndex: 0,
+        parentUUID: "123456",
+      },
+      {
+        path: "Chemicals/Hand Care",
+        UUID: "1234568",
+        description: "lorem ipsum something",
+        name: "Hand Care",
+        image: {
+          small: "/path/to/small/image.jpg",
+          large: "/path/to/big/image.jpg",
+        },
+        sortIndex: 0,
+        parentUUID: "123456",
       },
     ],
   },
-  {},
+  {
+    path: "Abrasives",
+    UUID: "321654",
+    description: "lorem ipsum something",
+    name: "Abrasives",
+    image: {
+      small: "/path/to/small/image.jpg",
+      large: "/path/to/big/image.jpg",
+    },
+    sortIndex: 0,
+    parentUUID: "",
+    subCategories: [
+      {
+        path: "Abrasives/Brushes",
+        UUID: "3216549879",
+        description: "lorem ipsum something",
+        name: "Brushes",
+        image: {
+          small: "/path/to/small/image.jpg",
+          large: "/path/to/big/image.jpg",
+        },
+        sortIndex: 0,
+        parentUUID: "321654",
+      },
+      {
+        path: "Abrasives/Coated",
+        UUID: "321654365",
+        description: "lorem ipsum something",
+        name: "Coated Abrasives",
+        image: {
+          small: "/path/to/small/image.jpg",
+          large: "/path/to/big/image.jpg",
+        },
+        sortIndex: 0,
+        parentUUID: "321654",
+      },
+    ],
+  },
 ];
 
 // Get Items By Category
-var items = openCatalog.getItems(where_clause, page, pageSize, sortBy, fields);
+var items = openCatalog.getItems(
+  categoryUUID,
+  filters,
+  search_string,
+  page,
+  pageSize,
+  sortBy,
+  fields
+);
 items = {
+  // pagination & sorting
   pagination: {
     page: 1,
     pageSize: 25,
@@ -126,143 +221,159 @@ items = {
   },
   products: [
     {
-      externalID: "123456",
-      UUID: "123456",
-      description: "lorem ipsum something",
-      name: "Screw Driver 20v",
-      images: [
-        {
-          small: "/path/to/small/image.jpg",
-          large: "/path/to/big/image.jpg",
-        },
-      ],
-      sortIndex: 0,
-      categories: [{},{}], // parentUUID
-      attributes: [
-        // unlimited # of attributes
-        { key: "key 1", value: "value 1" },
-        { key: "key 2", value: "value 2" },
-      ],
-      indexedAttributes: {
-        // LIMITED # of attributes
-        attr1: { key: "key 1", value: "value 1" },
-        attr3: { key: "key 2", value: "value 1" },
-        attr9: { key: "key 50", value: "value 1" },
-      },
-    },
-    {
-      externalID: "543",
+      externalID: "891.7265",
       UUID: "987654",
-      description: "lorem ipsum something",
-      name: "gfcvkblk",
+      description: "King Pin Fifth Wheel Lube - 15.5 oz",
+      name: "891.7265",
       images: [
         {
           small: "/path/to/small/image.jpg",
           large: "/path/to/big/image.jpg",
         },
       ],
-      sortIndex: 0,
-      categories: [{},{}], // parentUUID
+      categories: [
+        {
+          path: "Chemicals/Lubricants/Greases",
+          UUID: "123456",
+          description: "lorem ipsum something",
+          name: "Screw Driver 20v",
+          image: {
+            small: "/path/to/small/image.jpg",
+            large: "/path/to/big/image.jpg",
+          },
+          sortIndex: 0,
+          parentUUID: "",
+        },
+      ],
       attributes: [
         // unlimited # of attributes
-        { key: "key 1", value: "value 1" },
-        { key: "key 2", value: "value 2" },
+        { apiName: "Brand", title: "Brand", value: "Winzer" },
+        { apiName: "Type", title: "Type", value: "Greases" },
+        { apiName: "ContainerSize", title: "Container Size", value: "14 oz" },
       ],
-      indexedAttributes: {
-        // LIMITED # of attributes
-        attr21: { key: "key 1", value: "value 1" },
-        attr32: { key: "key 2", value: "value 1" },
-        attr49: { key: "key 50", value: "value 1" },
-      },
+      variations: [
+        {
+          externalID: "891.7265.1",
+          UUID: "987654",
+          description: "King Pin Fifth Wheel Lube - 20 oz",
+          name: "891.7265.1",
+          images: [
+            {
+              small: "/path/to/small/image.jpg",
+              large: "/path/to/big/image.jpg",
+            },
+          ],
+          categories: [
+            {
+              path: "Chemicals/Lubricants/Greases",
+              UUID: "123456",
+              description: "lorem ipsum something",
+              name: "Screw Driver 20v",
+              image: {
+                small: "/path/to/small/image.jpg",
+                large: "/path/to/big/image.jpg",
+              },
+              sortIndex: 0,
+              parentUUID: "",
+            },
+          ],
+          attributes: [
+            // unlimited # of attributes
+            { apiName: "Brand", title: "Brand", value: "Winzer" },
+            { apiName: "Type", title: "Type", value: "Greases" },
+            {
+              apiName: "ContainerSize",
+              title: "Container Size",
+              value: "21 oz",
+            },
+          ],
+        },
+      ],
     },
   ],
+  filters: [
+    {
+      apiName: "attr1",
+      title: "Attribute 1",
+      values: [
+        {
+          value: "value 1",
+          count: 10,
+        },
+        {
+          value: "value 11",
+          count: 11,
+        },
+        {
+          value: "value 111",
+          count: 0,
+        },
+      ],
+    },
+    {
+      apiName: "attr2",
+      title: "Attribute 2",
+      values: [
+        {
+          value: "value 2",
+          count: 20,
+        },
+        {
+          value: "value 22",
+          count: 22,
+        },
+        {
+          value: "value 2222",
+          count: 0,
+        },
+      ],
+    },
+  ],
+  categoryUUID: "234567898765",
+  searchString: "",
 };
 
 // Get Item
 var item = openCatalog.getItem(itemUUID);
 item = {
-  externalID: "123456",
-  UUID: "123456",
+  externalID: "543",
+  UUID: "987654",
   description: "lorem ipsum something",
-  name: "Screw Driver 20v",
+  name: "gfcvkblk",
   images: [
     {
       small: "/path/to/small/image.jpg",
       large: "/path/to/big/image.jpg",
     },
   ],
-  sortIndex: 0,
-  categories: [{},{}], // parentUUID
+  categories: [{}, {}], // parentUUID
   attributes: [
     // unlimited # of attributes
-    { key: "key 1", value: "value 1" },
-    { key: "key 2", value: "value 2" },
-  ],
-  indexedAttributes: {
-    // LIMITED # of attributes
-    attr1: { key: "key 1", value: "value 1" },
-    attr3: { key: "key 2", value: "value 1" },
-    attr9: { key: "key 50", value: "value 1" },
-  },
-  // a regular attribute
-//   specification: {},
-//   features: {},
-//   files: {},
-};
-
-// Get Filters
-// products are ALL products related to get items or search items
-// this endpoint should really be a part of the mentioned response
-var filters = openCatalog.getFilters(products);
-filters = {
-  categories: [
     {
-      externalID: "123456",
-      UUID: "123456",
-      name: "Screw Driver 20v",
-      count: 20,
+      apiName: "attr1",
+      title: "Attribute 1",
+      value: "value 1 value 1 value 1 value 1",
     },
     {
-      externalID: "98754",
-      UUID: "98754",
-      name: "Screw Driver 16v",
-      count: 55,
+      apiName: "attr2",
+      title: "Attribute 2",
+      value: "value 2 value 2 value 2 value 2",
+    },
+    {
+      apiName: "specification",
+      title: "Specification",
+      value: "<html>.......</html>",
+    },
+    {
+      apiName: "features",
+      title: "Features",
+      value: "<html>................</html>",
+    },
+    {
+      apiName: "file0",
+      title: "Safety Manual",
+      value: "the/path/to/the/file.pdf",
     },
   ],
-  attributes: [
-    {
-      name: "attr1",
-      values: [
-        {
-          name: "value1",
-          count: 10,
-        },
-        {
-          name: "value11",
-          count: 11,
-        },
-        {
-          name: "value111",
-          count: 111,
-        },
-      ],
-    },
-    {
-      name: "attr2",
-      values: [
-        {
-          name: "value2",
-          count: 20,
-        },
-        {
-          name: "value22",
-          count: 22,
-        },
-        {
-          name: "value2222",
-          count: 222,
-        },
-      ],
-    },
-  ],
+  variations: [],
 };
