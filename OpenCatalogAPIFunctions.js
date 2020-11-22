@@ -1,17 +1,19 @@
 // Get Categories
 // Will be used also for search categories
 // where clause is used for UUID and search string etc.
-var categories = openCatalog.getCategories(where_clause, sortBy, fields);
+var categories = openCatalog.getCategories(where_clause, fields);
 categories = [
   {
-    path: "Chemicals/Lubricants",
+    path: "Chemicals/Lubricants", // readOnly
     UUID: "123456",
     description: "lorem ipsum something",
     name: "Screw Driver 20v",
-    image: {
-      small: "/path/to/small/image.jpg",
-      large: "/path/to/big/image.jpg",
-    },
+    title: "Lubricants",
+    images: [
+      // scalable
+      { type: "small", path: "/path/to/small/image.jpg" },
+      { type: "large", path: "/path/to/big/image.jpg" },
+    ],
     sortIndex: 0,
     parentUUID: "1234",
   },
@@ -25,53 +27,29 @@ category = {
   UUID: "123456",
   description: "lorem ipsum something",
   name: "Screw Driver 20v",
-  image: {
-    small: "/path/to/small/image.jpg",
-    large: "/path/to/big/image.jpg",
-  },
+  title: "Lubricants",
+  images: [
+    { type: "small", path: "/path/to/small/image.jpg" },
+    { type: "large", path: "/path/to/big/image.jpg" },
+  ],
   sortIndex: 0,
   parentUUID: "",
-  subCategories: [
-    {
-      path: "Chemicals/Lubricants",
-      UUID: "1234567",
-      description: "lorem ipsum something",
-      name: "Lubricants",
-      image: {
-        small: "/path/to/small/image.jpg",
-        large: "/path/to/big/image.jpg",
-      },
-      sortIndex: 0,
-      parentUUID: "123456",
-    },
-    {
-      path: "Chemicals/Hand Care",
-      UUID: "1234568",
-      description: "lorem ipsum something",
-      name: "Hand Care",
-      image: {
-        small: "/path/to/small/image.jpg",
-        large: "/path/to/big/image.jpg",
-      },
-      sortIndex: 0,
-      parentUUID: "123456",
-    },
-  ],
 };
 
 // Get Category Path
 // Needed for Breadcrumbs
-var categoryPath = openCatalog.getCategoryPath(categoryID);
+var categoryPath = openCatalog.getCategoryPath(categoryUUID);
 categoryPath = [
   {
     path: "Chemicals",
     UUID: "1111",
     description: "lorem ipsum something",
-    name: "All",
-    image: {
-      small: "/path/to/small/image.jpg",
-      large: "/path/to/big/image.jpg",
-    },
+    name: "Chemicals",
+    title: "Chemicals",
+    images: [
+      { type: "small", path: "/path/to/small/image.jpg" },
+      { type: "large", path: "/path/to/big/image.jpg" },
+    ],
     sortIndex: 0,
     parentUUID: "",
   },
@@ -79,11 +57,12 @@ categoryPath = [
     path: "Chemicals/Lubricants",
     UUID: "2222",
     description: "lorem ipsum something",
-    name: "Chemicals",
-    image: {
-      small: "/path/to/small/image.jpg",
-      large: "/path/to/big/image.jpg",
-    },
+    name: "Lubricants",
+    title: "Lubricants",
+    images: [
+      { type: "small", path: "/path/to/small/image.jpg" },
+      { type: "large", path: "/path/to/big/image.jpg" },
+    ],
     sortIndex: 0,
     parentUUID: "1111",
   },
@@ -91,11 +70,12 @@ categoryPath = [
     path: "Chemicals/Lubricants/Wipes",
     UUID: "3333",
     description: "lorem ipsum something",
-    name: "Hand Care",
-    image: {
-      small: "/path/to/small/image.jpg",
-      large: "/path/to/big/image.jpg",
-    },
+    name: "Wipes",
+    title: "Wipes",
+    images: [
+      { type: "small", path: "/path/to/small/image.jpg" },
+      { type: "large", path: "/path/to/big/image.jpg" },
+    ],
     sortIndex: 0,
     parentUUID: "2222",
   },
@@ -103,17 +83,18 @@ categoryPath = [
 
 // Get Categoy Tree
 // Needed for build of UI tree
-var categoryTree = openCatalog.getCategoryTree();
+var categoryTree = openCatalog.getCategoryTree(categoryUUID, depth);
 categoryTree = [
   {
     path: "Chemicals",
     UUID: "123456",
     description: "lorem ipsum something",
     name: "Screw Driver 20v",
-    image: {
-      small: "/path/to/small/image.jpg",
-      large: "/path/to/big/image.jpg",
-    },
+    title: "Wipes",
+    images: [
+      { type: "small", path: "/path/to/small/image.jpg" },
+      { type: "large", path: "/path/to/big/image.jpg" },
+    ],
     sortIndex: 0,
     parentUUID: "",
     subCategories: [
@@ -122,10 +103,11 @@ categoryTree = [
         UUID: "1234567",
         description: "lorem ipsum something",
         name: "Lubricants",
-        image: {
-          small: "/path/to/small/image.jpg",
-          large: "/path/to/big/image.jpg",
-        },
+        title: "Lubricants",
+        images: [
+          { type: "small", path: "/path/to/small/image.jpg" },
+          { type: "large", path: "/path/to/big/image.jpg" },
+        ],
         sortIndex: 0,
         parentUUID: "123456",
       },
@@ -134,10 +116,11 @@ categoryTree = [
         UUID: "1234568",
         description: "lorem ipsum something",
         name: "Hand Care",
-        image: {
-          small: "/path/to/small/image.jpg",
-          large: "/path/to/big/image.jpg",
-        },
+        title: "Hand Care",
+        images: [
+          { type: "small", path: "/path/to/small/image.jpg" },
+          { type: "large", path: "/path/to/big/image.jpg" },
+        ],
         sortIndex: 0,
         parentUUID: "123456",
       },
@@ -148,10 +131,11 @@ categoryTree = [
     UUID: "321654",
     description: "lorem ipsum something",
     name: "Abrasives",
-    image: {
-      small: "/path/to/small/image.jpg",
-      large: "/path/to/big/image.jpg",
-    },
+    title: "Abrasives",
+    images: [
+      { type: "small", path: "/path/to/small/image.jpg" },
+      { type: "large", path: "/path/to/big/image.jpg" },
+    ],
     sortIndex: 0,
     parentUUID: "",
     subCategories: [
@@ -160,10 +144,11 @@ categoryTree = [
         UUID: "3216549879",
         description: "lorem ipsum something",
         name: "Brushes",
-        image: {
-          small: "/path/to/small/image.jpg",
-          large: "/path/to/big/image.jpg",
-        },
+        title: "Brushes",
+        images: [
+          { type: "small", path: "/path/to/small/image.jpg" },
+          { type: "large", path: "/path/to/big/image.jpg" },
+        ],
         sortIndex: 0,
         parentUUID: "321654",
       },
@@ -172,10 +157,11 @@ categoryTree = [
         UUID: "321654365",
         description: "lorem ipsum something",
         name: "Coated Abrasives",
-        image: {
-          small: "/path/to/small/image.jpg",
-          large: "/path/to/big/image.jpg",
-        },
+        title: "Coated Abrasives",
+        images: [
+          { type: "small", path: "/path/to/small/image.jpg" },
+          { type: "large", path: "/path/to/big/image.jpg" },
+        ],
         sortIndex: 0,
         parentUUID: "321654",
       },
@@ -188,6 +174,7 @@ var items = openCatalog.getItems(
   categoryUUID,
   filters,
   search_string,
+  where_clause, //
   page,
   pageSize,
   sortBy,
@@ -200,24 +187,22 @@ items = {
     pageSize: 25,
     totalItemCount: 100,
     numberOfPages: 4,
+  },
+  sorting: {
     sortOptions: [
-      {
-        displayName: "Best Match",
-        sortType: "1",
-      },
+      // configured in the Open Catalog exporter
       {
         displayName: "Product: A to Z",
-        sortType: "2",
+        sortID: "1",
+        sortExpression: ".........", // to be able to view the expression of the sort: fields, asc/desc etc.
       },
       {
         displayName: "Product: Z to A",
-        sortType: "3",
+        sortID: "2",
+        sortExpression: ".........",
       },
     ],
-    sortType: "1",
-    nextPageUri:
-      "https://www.winzer.com/api/v1/products?page=2&categoryId=47dcebdf-2f1c-45fa-bf7e-a7f60134ed8d&sort=1&expand=pricing%2Cattributes%2Cfacets%2Cbrand",
-    prevPageUri: null,
+    selectedSortID: "1",
   },
   products: [
     {
@@ -247,9 +232,15 @@ items = {
       ],
       attributes: [
         // unlimited # of attributes
-        { apiName: "Brand", title: "Brand", value: "Winzer" },
-        { apiName: "Type", title: "Type", value: "Greases" },
-        { apiName: "ContainerSize", title: "Container Size", value: "14 oz" },
+        { apiName: "Brand", type: "String", title: "Brand", value: "Winzer" },
+        { apiName: "Type", type: "String", title: "Type", value: "Greases" },
+        {
+          apiName: "ContainerSize",
+          type: "String",
+          title: "Container Size",
+          value: "14 oz",
+        },
+        { apiName: "Price", type: "Decimal", title: "Price", value: 12.88 },
       ],
       variations: [
         {
@@ -346,31 +337,49 @@ item = {
       large: "/path/to/big/image.jpg",
     },
   ],
-  categories: [{}, {}], // parentUUID
+  categories: [
+    {
+      path: "Chemicals/Lubricants/Greases",
+      UUID: "123456",
+      description: "lorem ipsum something",
+      name: "Screw Driver 20v",
+      image: {
+        small: "/path/to/small/image.jpg",
+        large: "/path/to/big/image.jpg",
+      },
+      sortIndex: 0,
+      parentUUID: "",
+    },
+  ],
   attributes: [
     // unlimited # of attributes
     {
       apiName: "attr1",
+      type: "String",
       title: "Attribute 1",
       value: "value 1 value 1 value 1 value 1",
     },
     {
       apiName: "attr2",
+      type: "String",
       title: "Attribute 2",
       value: "value 2 value 2 value 2 value 2",
     },
     {
       apiName: "specification",
+      type: "String",
       title: "Specification",
       value: "<html>.......</html>",
     },
     {
       apiName: "features",
+      type: "rich text / string",
       title: "Features",
       value: "<html>................</html>",
     },
     {
-      apiName: "file0",
+      apiName: "file0", // Add type? to be able to differ b/w fields: show all files under one tab in the info
+      type: "attachment",
       title: "Safety Manual",
       value: "the/path/to/the/file.pdf",
     },
