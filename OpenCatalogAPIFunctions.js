@@ -210,6 +210,8 @@ items = {
       UUID: "987654",
       description: "King Pin Fifth Wheel Lube - 15.5 oz",
       name: "891.7265",
+      dimension1: { code: "", name: "", sortIndex: "" },
+      dimension2: { code: "", name: "", sortIndex: "", groupID: "" },
       images: [
         {
           small: "/path/to/small/image.jpg",
@@ -248,34 +250,12 @@ items = {
           UUID: "987654",
           description: "King Pin Fifth Wheel Lube - 20 oz",
           name: "891.7265.1",
+          dimension1: { code: "", name: "", sortIndex: "" },
+          dimension2: { code: "", name: "", sortIndex: "", groupID: "" },
           images: [
             {
               small: "/path/to/small/image.jpg",
               large: "/path/to/big/image.jpg",
-            },
-          ],
-          categories: [
-            {
-              path: "Chemicals/Lubricants/Greases",
-              UUID: "123456",
-              description: "lorem ipsum something",
-              name: "Screw Driver 20v",
-              image: {
-                small: "/path/to/small/image.jpg",
-                large: "/path/to/big/image.jpg",
-              },
-              sortIndex: 0,
-              parentUUID: "",
-            },
-          ],
-          attributes: [
-            // unlimited # of attributes
-            { apiName: "Brand", title: "Brand", value: "Winzer" },
-            { apiName: "Type", title: "Type", value: "Greases" },
-            {
-              apiName: "ContainerSize",
-              title: "Container Size",
-              value: "21 oz",
             },
           ],
         },
