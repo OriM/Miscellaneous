@@ -171,15 +171,14 @@ categoryTree = [
 
 // Get Items By Category
 var items = openCatalog.getItems(
-  categoryUUID,
-  filters,
-  search_string,
-  where_clause, //
+  (categoryUUID = "1234"),
+  (search_string = "chask"),
+  (search_string_fields = ["TSABrand", "TSAContainerSize"]),
+  where, // match
   page,
   pageSize,
   sortBy,
   fields
-  // dimension group by - use for variations
 );
 items = {
   // pagination & sorting
@@ -189,22 +188,6 @@ items = {
     totalItemCount: 100,
     numberOfPages: 4,
   },
-  sorting: {
-    sortOptions: [
-      // configured in the Open Catalog exporter
-      {
-        displayName: "Product: A to Z",
-        sortID: "1",
-        sortExpression: ".........", // to be able to view the expression of the sort: fields, asc/desc etc.
-      },
-      {
-        displayName: "Product: Z to A",
-        sortID: "2",
-        sortExpression: ".........",
-      },
-    ],
-    selectedSortID: "1",
-  },
   products: [
     {
       externalID: "891.7265",
@@ -213,54 +196,19 @@ items = {
       name: "891.7265",
       dimension1: { code: "", name: "", sortIndex: "" },
       dimension2: { code: "", name: "", sortIndex: "", groupID: "" },
+      price: 77.5,
       images: [
         {
           small: "/path/to/small/image.jpg",
           large: "/path/to/big/image.jpg",
         },
       ],
-      categories: [
-        {
-          path: "Chemicals/Lubricants/Greases",
-          UUID: "123456",
-          description: "lorem ipsum something",
-          name: "Screw Driver 20v",
-          image: {
-            small: "/path/to/small/image.jpg",
-            large: "/path/to/big/image.jpg",
-          },
-          sortIndex: 0,
-          parentUUID: "",
-        },
-      ],
-      attributes: [
-        // unlimited # of attributes
-        { apiName: "Brand", type: "String", title: "Brand", value: "Winzer" },
-        { apiName: "Type", type: "String", title: "Type", value: "Greases" },
-        {
-          apiName: "ContainerSize",
-          type: "String",
-          title: "Container Size",
-          value: "14 oz",
-        },
-        { apiName: "Price", type: "Decimal", title: "Price", value: 12.88 },
-      ],
-      variations: [
-        {
-          externalID: "891.7265.1",
-          UUID: "987654",
-          description: "King Pin Fifth Wheel Lube - 20 oz",
-          name: "891.7265.1",
-          dimension1: { code: "", name: "", sortIndex: "" },
-          dimension2: { code: "", name: "", sortIndex: "", groupID: "" },
-          images: [
-            {
-              small: "/path/to/small/image.jpg",
-              large: "/path/to/big/image.jpg",
-            },
-          ],
-        },
-      ],
+      categories: [1234567890, 09876543456],
+      TSAType: "Greases",
+      TSAContainerSize: "14 oz",
+      TSABrand: "Winzer",
+      TSAMyPrice: "18.50",
+      TSAMyPriceCurrency: "$",
     },
   ],
   filters: [
@@ -367,3 +315,93 @@ item = {
   ],
   variations: [],
 };
+
+var filters = openCatalog.getDistinctValues(sameAsGetItemsParams, fields_that_i_want_the_distinct_values_for, fields_that_i_want_the_distinct_values_for_by_excluding_them_from_the_where);
+filters = [
+  {
+    apiName: "attr1",
+    title: "Attribute 1",
+    values: [
+      {
+        value: "value 1",
+        count: 10,
+      },
+      {
+        value: "value 11",
+        count: 11,
+      },
+      {
+        value: "value 111",
+        count: 0,
+      },
+    ],
+  },
+  {
+    apiName: "attr2",
+    title: "Attribute 2",
+    values: [
+      {
+        value: "value 2",
+        count: 20,
+      },
+      {
+        value: "value 22",
+        count: 22,
+      },
+      {
+        value: "value 2222",
+        count: 0,
+      },
+    ],
+  },
+
+  {
+    TSABrand: [
+            {
+                Value: 'a',
+                Count: 2
+            },
+            {
+                Value: 'b',
+                Count: 2
+            }
+    ],
+    TSATWA: [
+            {
+                Value: 'a',
+                Count: 2
+            },
+            {
+                Value: 'b',
+                Count: 2
+            }
+    ],
+},
+
+  {
+    TSABrand: {
+        Values: [
+            {
+                Value: 'a',
+                Count: 2
+            },
+            {
+                Value: 'b',
+                Count: 2
+            }
+        ]
+    },
+    TSATWA: {
+        Values: [
+            {
+                Value: 'a',
+                Count: 2
+            },
+            {
+                Value: 'b',
+                Count: 2
+            }
+        ]
+    }
+}
+];
