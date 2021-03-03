@@ -23,3 +23,5 @@ for (var i = 0; i < apiNames.length() && attributesFound < max; i++) {
     attributesFound++;
   }
 }
+
+return content;
