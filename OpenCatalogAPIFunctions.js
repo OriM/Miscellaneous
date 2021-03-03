@@ -195,12 +195,22 @@ items = {
       {
         displayName: "Product: A to Z",
         sortID: "1",
-        sortExpression: ".........", // to be able to view the expression of the sort: fields, asc/desc etc.
+        //sortExpression: ".........", // to be able to view the expression of the sort: fields, asc/desc etc.
       },
       {
         displayName: "Product: Z to A",
         sortID: "2",
-        sortExpression: ".........",
+        //sortExpression: ".........",
+      },
+      {
+        displayName: "Price: Low to High",
+        sortID: "3",
+        //sortExpression: ".........",
+      },
+      {
+        displayName: "Price: High to Low",
+        sortID: "4",
+        //sortExpression: ".........",
       },
     ],
     selectedSortID: "1",
@@ -267,6 +277,7 @@ items = {
     {
       apiName: "attr1",
       title: "Attribute 1",
+      type: "string", // number/price/date
       values: [
         {
           value: "value 1",

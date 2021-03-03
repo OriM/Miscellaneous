@@ -1,0 +1,25 @@
+var apiNames = [
+  { title: "Diameter", apiName: "ItemTSADiameter" },
+  { title: "Drive Type", apiName: "ItemTSADriveType" },
+  { title: "Features", apiName: "ItemTSAFeaturesHTML" },
+  { title: "Finish", apiName: "ItemTSAFinish" },
+  { title: "Head Style", apiName: "ItemTSAHeadStyle" },
+  { title: "Length", apiName: "ItemTSALength" },
+  { title: "Material", apiName: "ItemTSAMaterial" },
+  { title: "Measurement", apiName: "ItemTSAMeasurement" },
+  { title: "Origin", apiName: "ItemTSAOrigin" },
+  { title: "Point Type", apiName: "ItemTSAPointType" },
+  { title: "Thread Type", apiName: "ItemTSAThreadType" }
+];
+
+var max = 5;
+var attributesFound = 0;
+var content = "";
+for (var i = 0; i < apiNames.length() && attributesFound < max; i++) {
+  var attirbuteValue = GetValueByApiName(apiNames[i].apiName);
+  if (attirbuteValue != "") {
+    var attirbuteTitle = apiNames[i].title;
+    content += "<b>" + + ":</b> " + attirbuteValue + "<br/>";
+    attributesFound++;
+  }
+}
