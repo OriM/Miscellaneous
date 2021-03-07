@@ -1,7 +1,6 @@
 var apiNames = [
   { title: "Diameter", apiName: "ItemTSADiameter" },
   { title: "Drive Type", apiName: "ItemTSADriveType" },
-  { title: "Features", apiName: "ItemTSAFeaturesHTML" },
   { title: "Finish", apiName: "ItemTSAFinish" },
   { title: "Head Style", apiName: "ItemTSAHeadStyle" },
   { title: "Length", apiName: "ItemTSALength" },

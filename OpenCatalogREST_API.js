@@ -320,7 +320,6 @@ var filters = openCatalog.getDistinctValues(sameAsGetItemsParams, fields_that_i_
 filters = [
   {
     apiName: "attr1",
-    title: "Attribute 1",
     values: [
       {
         value: "value 1",
@@ -338,7 +337,6 @@ filters = [
   },
   {
     apiName: "attr2",
-    title: "Attribute 2",
     values: [
       {
         value: "value 2",
