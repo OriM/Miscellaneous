@@ -2,6 +2,8 @@ var features = GetValueByApiName("ItemTSAFeaturesHTML");
 var specifications = GetValueByApiName("ItemTSASpecificationsHTML");
 var safetyDS = GetValueByApiName("ItemTSASDSText");
 var techDS = GetValueByApiName("ItemTSATechSheetText");
+var lidDS = GetValueByApiName("ItemTSALidChartText");
+
 var documents = "";
 var html = "";
 
@@ -18,6 +20,10 @@ if (safetyDS != "") {
 if (techDS != "") {
   documents += "<li><a href='" + techDS + "'>Tech Sheet</a></li>";
 }
+if (lidDS != "") {
+  documents += "<li><a href='" + lidDS + "'>Lid Chart</a></li>";
+}
+
 if (documents != "") {
   html += "<h2 class ='LowerHeader'>Documents</h2>" + "<ul>" + documents + "</ul>";
 }
