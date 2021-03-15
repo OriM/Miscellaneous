@@ -13,10 +13,10 @@ if (specifications != "") {
 }
 
 if (safetyDS != "") {
-  documents += "<li><a href='" + safetyDS + "'>Safety Data Sheet</a></li>";
+  documents += "<li><a href='" + safetyDS + "target=\"_blank\" rel=\"noopener noreferrer\"'>Safety Data Sheet</a></li>";
 }
 if (techDS != "") {
-  documents += "<li><a href='" + techDS + "'>Tech Sheet</a></li>";
+  documents += "<li><a href='" + techDS + "target=\"_blank\" rel=\"noopener noreferrer\"'>Tech Sheet</a></li>";
 }
 if (documents != "") {
   html += "<h2 class ='LowerHeader'>Documents</h2>" + "<ul>" + documents + "</ul>";
