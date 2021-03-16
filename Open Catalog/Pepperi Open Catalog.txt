@@ -61,8 +61,10 @@ The plugin is an add-on to the Pepperi B2B eCommerce module and pricing will be 
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is stored in the /assets directory.
-2. This is the second screen shot
+1. Pepperi Open Catalog allows to add a top bar with your categories dropdown and search box
+2. Categories dropdown displays the entire category tree
+3. Pepperi Open Catalog Products, along with the categories top bar and breadcrumbs
+4. Pepperi Open Catalog Product information page 
 
 == Changelog ==
 
