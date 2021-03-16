@@ -21,7 +21,7 @@ if (techDS != "") {
   documents += "<li><a href='" + techDS + "' target=\"_blank\" rel=\"noopener noreferrer\">Tech Sheet</a></li>";
 }
 if (lidDS != "") {
-  documents += "<li><a href='" + lidDS + "'>Lid Chart</a></li>";
+  documents += "<li><a href='" + lidDS + "' target=\"_blank\" rel=\"noopener noreferrer\">Lid Chart</a></li>";
 }
 
 if (documents != "") {
