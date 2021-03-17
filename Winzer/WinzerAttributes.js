@@ -21,9 +21,15 @@ for (i = 0; i < apiNamesLenth && attributesFound < max; i++) {
   var attirbuteValue = GetValueByApiName(apiName);
   if (attirbuteValue != "") {
     var attirbuteTitle = apiNames[i].title;
-    content += "<b>" + attirbuteTitle + ":</b> " + attirbuteValue + "<br/>";
+    if (content == "")
+    {
+      content += "<div>";
+    }
+    content += "<span class=\"pep-attribute-title\">" + attirbuteTitle + ":</span> " + "<span class=\"pep-attribute-value\">" + attirbuteValue + ":</span> " + "<br/>";
     attributesFound++;
   }
 }
-
+if (content != "") {
+  content += "</div>";
+}
 return content;
