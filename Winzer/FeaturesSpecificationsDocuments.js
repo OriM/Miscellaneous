@@ -8,10 +8,10 @@ var documents = "";
 var html = "";
 
 if (features != "") {
-  html += "<h2 class ='LowerHeader'>Features</h2>" + features + "</ul>";
+  html += "<h2 class ='pep-section-info-title'>Features</h2>" + features + "</ul>";
 }
 if (specifications != "") {
-  html += "<h2 class ='LowerHeader'>Specifications</h2>" + specifications + "</ul>";
+  html += "<h2 class ='pep-section-info-title'>Specifications</h2>" + specifications + "</ul>";
 }
 
 if (safetyDS != "") {
@@ -25,7 +25,7 @@ if (lidDS != "") {
 }
 
 if (documents != "") {
-  html += "<h2 class ='LowerHeader'>Documents</h2>" + "<ul>" + documents + "</ul>";
+  html += "<h2 class ='pep-section-info-title'>Documents</h2>" + "<ul>" + documents + "</ul>";
 }
 
 var res = html;
