@@ -4,6 +4,5 @@ var content =
   "<h1 class ='MainHeader'>" +
   productTitle +
   "</h1>" +
-  externlID +
-  "<br/><br/>";
+  externlID;
 return content;
