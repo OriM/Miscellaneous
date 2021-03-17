@@ -23,7 +23,7 @@ for (i = 0; i < apiNamesLenth && attributesFound < max; i++) {
     var attirbuteTitle = apiNames[i].title;
     if (content == "")
     {
-      content += "<div>";
+      content += "<div class=\"pep-info-spacing\">";
     }
     content += "<span class=\"pep-attribute-title\">" + attirbuteTitle + ":</span> " + "<span class=\"pep-attribute-value\">" + attirbuteValue + ":</span> " + "<br/>";
     attributesFound++;
