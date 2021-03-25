@@ -1,0 +1,22 @@
+.pep-info-title {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0;
+}
+
+.pep-info-spacing {
+    margin-bottom: 0.5rem;
+}
+
+.pep-section-info-title {
+    font-weight: 800;
+}
+
+.pep-attribute-title {
+    font-weight: 800;
+}
