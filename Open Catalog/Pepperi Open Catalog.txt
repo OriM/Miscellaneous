@@ -1,5 +1,5 @@
 === Pepperi Open Catalog ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: pepperi
 Donate link:
 Tags: catalog, products, ecommerce
 Requires at least: 4.7
