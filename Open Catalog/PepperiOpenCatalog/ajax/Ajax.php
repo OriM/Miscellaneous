@@ -17,7 +17,8 @@ class PepOpenCatalogAjax {
 	  //https://idp.pepperi.com/api/AddonUserToken --> pepOC_url
 	  //https://papi.pepperi.com/V1.0/open_catalog/configurations --> pepOc_configuration
       $pepOC_url = esc_url(wp_strip_all_tags($_POST['pepOC_url']));  
-      $pepOc_configuration_url = esc_url(wp_strip_all_tags($_POST['pepOc_configuration']));  							
+      $pepOc_configuration_url = esc_url(wp_strip_all_tags($_POST['pepOc_configuration'])); 
+	  $pep_addonkey = wp_strip_all_tags($_POST['pep_addonkey']); 
 		
 	  //get secret key from settigs
 	  $pepOc_Options =  get_option('pep_opencatalog_options');				  		  
@@ -27,20 +28,24 @@ class PepOpenCatalogAjax {
       //get access token while sending the secret key
        $output = $this->httpRequest($httpArgs,$pepOC_url);			    		 		 	   			        
 		
-       if($this->$result["success"]){
-		  //Get customer data configuration json file each time we are getting a new access token
+       if($this->$result["success"]){		  		   		   
 		   $this->$result["token"] = json_decode($output);  
-		   $httpArgs = array('method' => 'GET', 'headers' => array('Authorization' => 'Bearer ' . $this->$result['token']->access_token),'body' => null);						
-       	   $output = $this->httpRequest($httpArgs,$pepOc_configuration_url);	
-		   
-		   if($this->$result["success"]){
-				$configuration_object = $this->httpRequest($httpArgs,json_decode($output)->ConfigurationsURL);	
-			    if($this->$result["success"]){
-					$this->$result['configuation'] = json_decode($configuration_object);  
-				}
-			   
-			}			
-       		
+		   //$this->$result["output"] = json_decode($this->$result["token"]->access_token)->pepperi.addonkey;
+		   //compare old token addonkey with new token, if equals, do not trigger a request to get configuration_url
+		   //if($this->$result["token"]->pepperi.addonkey != $pep_addonkey)
+		   //{		   
+			   //Get customer data configuration json file each time we are getting a new access token
+			   $httpArgs = array('method' => 'GET', 'headers' => array('Authorization' => 'Bearer ' . $this->$result['token']->access_token),'body' => null);						
+			   $output = $this->httpRequest($httpArgs,$pepOc_configuration_url);	
+
+			   if($this->$result["success"]){
+					$configuration_object = $this->httpRequest($httpArgs,json_decode($output)->ConfigurationsURL);	
+					if($this->$result["success"]){
+						$this->$result['configuation'] = json_decode($configuration_object);  
+					}
+
+				}			
+	   	  //}
 		}	  
 		
 		echo json_encode($this->$result);	  

@@ -6,21 +6,30 @@
 		    itemUUID: null,            
             elSearch : 	null,            
             elMenu : null,
+			elBreadCrumbs: null,
             elForm: null, 
-			elSizeDetect: null,			
+			elSizeDetect: null,	
+			lastSearchKeyword: '',
+		    itemCategoriesUUID: [], 
 		
             init(){ 	
 					 super.init({ 
 					 	objectName: pepItemDetails, components: [
 					 		{propName:'elSearch', htmName:'pep-web-search', events: [{eventName:'stateChange',eventCallback: window.PepOpenCatalogUtils.changeTopbarElements}, {eventName:'search', eventCallback:pepItemDetails.search}]},
 							{ propName:'elMenu', htmName:'pep-web-menu', events: [{eventName:'menuItemClick' ,eventCallback:pepItemDetails.menuClick }]},
+							{ propName:'elBreadCrumbs', htmName:'pep-bread-crumbs',   events: [{eventName: 'itemClick',eventCallback: pepItemDetails.breadCrumbsClick}]},
 							{ propName:'elSizeDetect', htmName:'pep-size-detect', events: [{eventName: 'sizeChange',eventCallback: pepItemDetails.setScreenSize}]},
 						    { propName:'elForm', htmName:'pep-web-form',  events: null}
 				            ]
 				 		  });	
 				
     			this.itemUUID = PepOpenCatalogUtils.getQueryParameterByName("uuid");
-				this.screenSize = this.elSizeDetect.getCurrentSize().name;		
+				this.screenSize = this.elSizeDetect.getCurrentSize().name;						
+				var items_params = JSON.parse(window.sessionStorage.getItem("ItemsParams"));	
+				if(items_params != null){								
+					pepItemDetails.elSearch.value = items_params.search_string;
+				}				
+				
 				if(this.itemUUID != null && this.itemUUID != ''){					
                 	this.getItemDetails(pepItemDetails.getItemDetailsCallback, this.itemUUID);   
 				}				
@@ -28,18 +37,11 @@
             },	           
 
             initComponents(){            
-                
+                var breadCrumbs_path;
 				PepOpenCatalogUtils.setScreenSize(this.elSizeDetect.getCurrentSize().name);				
 				super.initComponents({Object_name:pepItemDetails , components:[{componentName:'pep-web-menu', iconName:'arrow_down', type:'action-select', styleType: 'regular'}]});       
 				var selectedCategory = JSON.parse(window.sessionStorage.getItem("ItemsParams"));													
-                pepItemDetails.elMenu.selectedItem = selectedCategory == null ? {children: [], key: "", path: [""], text: "Categories"}  : selectedCategory.CategoryUUID;    										
-				/*
-				var control = PepOpenCatalogUtils.getControlByScreenSize(pepItemDetails.output.data_configuration.DataViews,"OrderCenterItemDetails", pepItemDetails.screenSize),
-		            res = PepOpenCatalogUtils.dataConvertor(control,{Products : [pepItemDetails.output.data]});				
-				this.elForm.layout = res.data_view;            									                				                
-				this.elForm.data = res.data[0];						
-				this.elForm.canEditObject = false;
-				*/
+                pepItemDetails.elMenu.selectedItem = selectedCategory == null ? {children: [], key: "", path: [""], text: "Categories"}  : selectedCategory.CategoryUUID;							
             },        
         
          getItemDetails(callback, itemUUID){                			 			 
@@ -59,6 +61,21 @@
 			pepItemDetails.elForm.canEditObject = false;
 		},
 		
+		buildBreadCrumbs(){				
+				var categoryPathArr = [];
+				pepItemDetails.itemCategoriesUUID.forEach(function(categoryUUID) {
+					//search the category path of the item in the flat tree from the config object 
+					var _catUUID = pepItemDetails.output.data_configuration.CategoriesList.find(cat => cat.UUID === categoryUUID);
+					categoryPathArr.push({categoryUUIDpath : _catUUID.Path});					
+				});
+				//find the largets array path
+				var path = categoryPathArr.find(obj => obj.categoryUUIDpath.length === Math.max.apply(Math, categoryPathArr.map(function(cat) { return cat.categoryUUIDpath.length; })))
+				breadCrumbs_path =  path.categoryUUIDpath;				
+			
+			
+			PepOpenCatalogUtils.setBreadCrumbs(breadCrumbs_path, this.elBreadCrumbs);	
+		},
+		
 		search(event){
 			if(event.detail.value == '')							  																				
 				return;						
@@ -68,10 +85,18 @@
 		},
         
 		menuClick(event){
-			if(pepItemDetails.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0)								   									return;
+			if((pepItemDetails.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0)	||
+			   (pepItemDetails.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && pepItemDetails.screenSize === 'xs'))//not supported in phablets DI-17984
+				{
+			   		return;
+				}
 			pepItemDetails.elMenu.selectedItem = event.detail.source;	                                            
 			window.sessionStorage.setItem("ItemsParams",  JSON.stringify({CategoryUUID: pepItemDetails.elMenu.selectedItem, search_string: ''}));
 			window.location.href =  pepItemDetails.output.pluginSettings.pages.pep_opencatalog_page_url; 	
+		},
+		
+		breadCrumbsClick(event)	{
+			window.location.href = event.detail.source.key;
 		},
 		
 		setScreenSize(event){
@@ -80,7 +105,9 @@
 		
         getItemDetailsCallback(data)	{	
             pepItemDetails.output.data = data;
+			pepItemDetails.itemCategoriesUUID = data.CategoryUUID; //items categories, can be more than one category 
 			pepItemDetails.buidlForm();
+			pepItemDetails.buildBreadCrumbs();
            //pepItemDetails.initComponents();
         },    	
         

@@ -141,17 +141,24 @@ let PepOpenCatalogUtils = {
 			}						
 		})
 		.fail(function(error){						
-		  try{
+		  try{			  
 				var res = JSON.parse(error.responseText);
 				if(res && res.fault.detail.errorcode.toLowerCase() == 'unauthorotized'){//need to get 401 status code fom api
-					//alert(error.responseText);	
-					window.sessionStorage.removeItem("pep_config");					
+					//alert(error.responseText);					
+					//window.sessionStorage.removeItem("pep_config");										
+					var pep_config = JSON.parse(window.sessionStorage.getItem("pep_config"));	
+					pep_config.refreshToken = true;					
+					window.sessionStorage.setItem("pep_config",  JSON.stringify(pep_config));
 					window.location.reload();
 				}else{
-					alert(error.responseText);											
+					//alert(error.responseText);											
+					console.log(error.responseText);
 				}
 		  }catch(e){			  
-			  window.sessionStorage.removeItem("pep_config");			  
+			  //window.sessionStorage.removeItem("pep_config");			  
+			  var pep_config = JSON.parse(window.sessionStorage.getItem("pep_config"));	
+			  pep_config.refreshToken = true;					
+			  window.sessionStorage.setItem("pep_config",  JSON.stringify(pep_config));
 			  window.location.reload();			  
 		  }
 		})
@@ -184,7 +191,7 @@ let PepOpenCatalogUtils = {
 		return decodeURIComponent(results[2].replace(/\+/g, ' '));
 	},
 	
-	dataConvertor(dava_view, data){		
+	dataConvertor(dava_view, data, options = {currentView: null}){		
 		var in_DataView = dava_view, in_Data = data;; 
 		var uiControl = { Columns: in_DataView.Columns.length, ControlFields: []};		
 		jQuery.each(in_DataView.Fields, function(index, field) {    
@@ -209,8 +216,11 @@ let PepOpenCatalogUtils = {
 							    if(f_value != ''){
 									var pathArr = f_value.split('/'),
 										filenameWithExtensionArr = pathArr.pop().split('.'),
-										newFileName = filenameWithExtensionArr[0] + "_200x200." + filenameWithExtensionArr[1];														
-									value = f_value = f_value.slice(0,f_value.lastIndexOf('/') + 1) + newFileName;//.split('?')[0];																
+										newFileName = filenameWithExtensionArr[0] + "_200x200." + filenameWithExtensionArr[1];									
+										//value = f_value = f_value.slice(0,f_value.lastIndexOf('/') + 1) + newFileName;//.split('?')[0];	
+									if(options.currentView == null || options.currentView.key == 'cards'){
+										value = f_value = f_value.slice(0,f_value.lastIndexOf('/') + 1) + newFileName;//.split('?')[0];	
+									}									
 								}
 								break;
 							/*
@@ -500,7 +510,16 @@ let PepOpenCatalogUtils = {
 		return controlObj;
 	},
 
-	
+    parsePepperiJwt (token) {
+		var base64Url = token.split('.')[1];
+		var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+		var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+			return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+		}).join(''));
+
+		return JSON.parse(jsonPayload);
+	},
+		
 	changeTopbarElements(event){		
 				if(event.detail.state === 'open'){
 					jQuery('.pepHeader').addClass('search-is-open');

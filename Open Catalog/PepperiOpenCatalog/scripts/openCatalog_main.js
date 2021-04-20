@@ -123,7 +123,7 @@
 		pepListItems.sliceListItems();
 		
         var control = PepOpenCatalogUtils.getControlByScreenSize(pepListItems.output.data_configuration.DataViews,pepListItems.elViews.currentView.apiName,pepListItems.screenSize),
-            res = PepOpenCatalogUtils.dataConvertor(control,pepListItems.output.data);	 					    				
+            res = PepOpenCatalogUtils.dataConvertor(control,pepListItems.output.data, {currentView: pepListItems.elViews.currentView});	 					    				
         pepListItems.elList.initListData(res.data_view,pepListItems.output.data.TotalCount,res.data,pepListItems.elViews.currentView.key);        	
 		const totalElemnts = document.querySelectorAll('.total-num');			       
 		 jQuery.each(totalElemnts, function(index, item){
@@ -294,7 +294,9 @@
 	},
 		
 	menuItemClick(event)	{
-		if(pepListItems.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0){	
+		if((pepListItems.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0) || 
+		   (pepListItems.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && pepListItems.screenSize === 'xs'))//not supported in phablets DI-17984
+		{	
 			if(pepListItems.lastSelectedCategory){
 				pepListItems.elMenu.selectedItem = pepListItems.lastSelectedCategory;                                    									
 			}else{
@@ -318,7 +320,7 @@
 		    pepListItems.elViews.currentView= event.detail.source;					
 			pepListItems.sliceListItems();									
 			var control = PepOpenCatalogUtils.getControlByScreenSize(pepListItems.output.data_configuration.DataViews,pepListItems.elViews.currentView.apiName,pepListItems.screenSize),
-            	res = PepOpenCatalogUtils.dataConvertor(control,pepListItems.output.data);	 					       	
+            	res = PepOpenCatalogUtils.dataConvertor(control,pepListItems.output.data, {currentView: pepListItems.elViews.currentView});	 					       	
        		pepListItems.elList.initListData(res.data_view, pepListItems.output.data.TotalCount, res.data, pepListItems.elViews.currentView.key);
 	},
 	

@@ -45,7 +45,8 @@
 			},
 			
 		    menuClick(event) {
-				if(pepTopItems.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0)	
+				if((pepTopItems.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0) ||
+				   (pepTopItems.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && pepTopItems.screenSize === 'xs'))//not supported in phablets DI-17984
 				{
 					if(pepTopItems.lastSelectedCategory){
 						pepTopItems.elMenu.selectedItem = pepTopItems.lastSelectedCategory;                                    									
@@ -64,8 +65,7 @@
 				PepOpenCatalogUtils.setScreenSize(event.detail.name);	
 			},
 		
-            getTokenCallback(data){
-                
+            getTokenCallback(data){                
 				 if(data.success){
 						pepTopItems.output.pluginSettings = PepOpenCatalogUtils.getPluginSettings();
 						pepTopItems.output.data = JSON.parse(data.output);                                        
