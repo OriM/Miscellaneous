@@ -18,17 +18,22 @@ let pepComponents = {
 
 			});				
 
-    },
-	
+    },	
+
 	start(_object){		 
 		//GET PEPPERI TOKEN 						
-		var pep_config = JSON.parse(window.sessionStorage.getItem("pep_config"));												
-		if(typeof(pep_config.refreshToken) != 'undefined' && pep_config.refreshToken /*!JSON.parse(window.sessionStorage.getItem("pep_config"))*/){			
-			 var encodedJWT = window.PepOpenCatalogUtils.parsePepperiJwt(pep_config.pepperi_token);	
-			 window.PepOpenCatalogUtils.pepApiCall([ 
+		var encodedJWT = null, pep_config = JSON.parse(window.sessionStorage.getItem("pep_config"));												
+		if(!pep_config || (typeof(pep_config.refreshToken) != 'undefined' && pep_config.refreshToken)){			
+			 
+			if(pep_config){
+				encodedJWT = window.PepOpenCatalogUtils.parsePepperiJwt(pep_config.pepperi_token);					
+			}
+			
+			window.PepOpenCatalogUtils.pepApiCall([ 
 			 {pep_url:null, pep_data_url: { pepOC_url: 'https://idp.pepperi.com/api/AddonUserToken', 
 											   pepOc_configuration: this.papiApiDomain + '/open_catalog/configurations', 
-										       pep_addonkey: encodedJWT["pepperi.addonkey"], 
+										       pep_addonkey: encodedJWT != null ? encodedJWT["pepperi.addonkey"] : '',
+										       pep_session: pep_config != null ? true : false,
 											   action: 'getPepToken' }, pep_request_type: 'POST', pep_request_callback:_object.getTokenCallback, pep_request_headers: null}], 'pep-open-catalog');  
 
 		}else{		

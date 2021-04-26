@@ -19,7 +19,9 @@
     
             addEvents(){				
 				jQuery.each(this.elCarousel, function(index, item) {    
-								                item.addEventListener('itemClick', (function(event){                                                                                        					 						window.location.href =  pepOCcarousel.output.pluginSettings.pages.pep_itemdetails_page_url + "?uuid=" +  event.detail.source.UID;															                                                								}));	                                                 			
+							item.addEventListener('itemClick', (function(event){                                                                                        					 						
+								window.sessionStorage.removeItem("ItemsParams");
+								window.location.href =  pepOCcarousel.output.pluginSettings.pages.pep_itemdetails_page_url + "?uuid=" +  event.detail.source.UID;}));	                                                 			
 							});                
             },
     
@@ -128,8 +130,12 @@
              if(data.success){
                     pepOCcarousel.output.pluginSettings = PepOpenCatalogUtils.getPluginSettings();
                     pepOCcarousel.output.data = JSON.parse(data.output);                                                            
-				  	pepOCcarousel.pepperi_token = data.token.access_token; 
-                    pepOCcarousel.output.data_configuration = data.configuation;                              
+				  	pepOCcarousel.pepperi_token = data.token.access_token;
+				    if(data.refreshConfig){
+                    	pepOCcarousel.output.data_configuration = data.configuation;                              
+					}else{//get the old configuration from session
+						pepOCcarousel.output.data_configuration = JSON.parse(window.sessionStorage.getItem("pep_config")).output.data_configuration;	
+					}		
 					window.sessionStorage.setItem("pep_config",  JSON.stringify({pepperi_token: pepOCcarousel.pepperi_token , output: pepOCcarousel.output}));
 					pepOCcarousel.init();			
                 }

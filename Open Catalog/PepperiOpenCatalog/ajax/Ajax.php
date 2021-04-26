@@ -4,7 +4,7 @@ class PepOpenCatalogAjax {
 	private $result =  null;
 
     function __construct() {                        
-        $this->$result = array('success' => true, "error" => null, 'token' => null, 'output' => null, 'settings' => null, 'configuation' => null);
+        $this->$result = array('success' => true, "error" => null, 'token' => null, 'output' => null, 'settings' => null, 'configuation' => null, 'refreshConfig' => false);
         //both needed to run ajax action
         add_action('wp_ajax_nopriv_getPepToken', array($this, 'getPepToken') );
         add_action('wp_ajax_getPepToken', array($this, 'getPepToken') );  				
@@ -18,7 +18,8 @@ class PepOpenCatalogAjax {
 	  //https://papi.pepperi.com/V1.0/open_catalog/configurations --> pepOc_configuration
       $pepOC_url = esc_url(wp_strip_all_tags($_POST['pepOC_url']));  
       $pepOc_configuration_url = esc_url(wp_strip_all_tags($_POST['pepOc_configuration'])); 
-	  $pep_addonkey = wp_strip_all_tags($_POST['pep_addonkey']); 
+	  $pep_addonkey = wp_strip_all_tags($_POST['pep_addonkey']);
+	  $pep_session = wp_strip_all_tags($_POST['pep_session']);	
 		
 	  //get secret key from settigs
 	  $pepOc_Options =  get_option('pep_opencatalog_options');				  		  
@@ -28,12 +29,12 @@ class PepOpenCatalogAjax {
       //get access token while sending the secret key
        $output = $this->httpRequest($httpArgs,$pepOC_url);			    		 		 	   			        
 		
-       if($this->$result["success"]){		  		   		   
-		   $this->$result["token"] = json_decode($output);  
-		   //$this->$result["output"] = json_decode($this->$result["token"]->access_token)->pepperi.addonkey;
-		   //compare old token addonkey with new token, if equals, do not trigger a request to get configuration_url
-		   //if($this->$result["token"]->pepperi.addonkey != $pep_addonkey)
-		   //{		   
+       if($this->$result["success"]){			   
+		   $this->$result["token"] = json_decode($output);  		   		   		   		   
+		   $decodedToken =  json_decode(base64_decode(str_replace('_', '/', str_replace('-','+',explode('.', $this->$result["token"]->access_token)[1]))));		     		   		   		   		   
+		   //compare old token addonkey with new token, if equals, do not trigger a request to get configuration_url		   
+		   if((!hash_equals($decodedToken->{'pepperi.addonkey'}, $pep_addonkey)) || !$pep_session)		   
+		   {		   
 			   //Get customer data configuration json file each time we are getting a new access token
 			   $httpArgs = array('method' => 'GET', 'headers' => array('Authorization' => 'Bearer ' . $this->$result['token']->access_token),'body' => null);						
 			   $output = $this->httpRequest($httpArgs,$pepOc_configuration_url);	
@@ -42,10 +43,11 @@ class PepOpenCatalogAjax {
 					$configuration_object = $this->httpRequest($httpArgs,json_decode($output)->ConfigurationsURL);	
 					if($this->$result["success"]){
 						$this->$result['configuation'] = json_decode($configuration_object);  
+						$this->$result['refreshConfig'] = true;
 					}
 
 				}			
-	   	  //}
+	   	  }
 		}	  
 		
 		echo json_encode($this->$result);	  

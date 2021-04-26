@@ -295,7 +295,8 @@
 		
 	menuItemClick(event)	{
 		if((pepListItems.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0) || 
-		   (pepListItems.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && pepListItems.screenSize === 'xs'))//not supported in phablets DI-17984
+		   (pepListItems.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && event.detail.source.children.length > 0 && pepListItems.screenSize === 'xs'))
+		   //not supported in phablets DI-17984
 		{	
 			if(pepListItems.lastSelectedCategory){
 				pepListItems.elMenu.selectedItem = pepListItems.lastSelectedCategory;                                    									
@@ -448,8 +449,12 @@
             if(data.success){
                 pepListItems.output.pluginSettings = PepOpenCatalogUtils.getPluginSettings();
                 pepListItems.output.data = JSON.parse(data.output);                 			
-                pepListItems.pepperi_token = data.token.access_token; 		
-				pepListItems.output.data_configuration = data.configuation;  
+                pepListItems.pepperi_token = data.token.access_token; 
+				if(data.refreshConfig){
+					pepListItems.output.data_configuration = data.configuation;  
+				}else{//get the old configuration from session
+					pepListItems.output.data_configuration = JSON.parse(window.sessionStorage.getItem("pep_config")).output.data_configuration;	
+				}					
 				window.sessionStorage.setItem("pep_config",  JSON.stringify({pepperi_token: pepListItems.pepperi_token , output: pepListItems.output}));
                 pepListItems.init();			
             }

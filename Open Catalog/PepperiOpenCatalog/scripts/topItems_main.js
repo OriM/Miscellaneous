@@ -46,7 +46,8 @@
 			
 		    menuClick(event) {
 				if((pepTopItems.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0) ||
-				   (pepTopItems.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && pepTopItems.screenSize === 'xs'))//not supported in phablets DI-17984
+				  (pepTopItems.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && event.detail.source.children.length > 0 && pepTopItems.screenSize === 'xs'))
+				   //not supported in phablets DI-17984
 				{
 					if(pepTopItems.lastSelectedCategory){
 						pepTopItems.elMenu.selectedItem = pepTopItems.lastSelectedCategory;                                    									
@@ -70,7 +71,11 @@
 						pepTopItems.output.pluginSettings = PepOpenCatalogUtils.getPluginSettings();
 						pepTopItems.output.data = JSON.parse(data.output);                                        
 						pepTopItems.pepperi_token = data.token.access_token; 
-						pepTopItems.output.data_configuration = data.configuation;                              
+						if(data.refreshConfig){
+							pepTopItems.output.data_configuration = data.configuation;                              
+						}else{//get the old configuration from session
+							pepTopItems.output.data_configuration = JSON.parse(window.sessionStorage.getItem("pep_config")).output.data_configuration;	
+						}	
 						window.sessionStorage.setItem("pep_config",  JSON.stringify({pepperi_token: pepTopItems.pepperi_token , output: pepTopItems.output}));
 						pepTopItems.init();				
 					}

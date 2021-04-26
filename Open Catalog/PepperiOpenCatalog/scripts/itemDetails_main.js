@@ -61,7 +61,11 @@
 			pepItemDetails.elForm.canEditObject = false;
 		},
 		
-		buildBreadCrumbs(){				
+		buildBreadCrumbs(){	
+			/*if(pepItemDetails.elSearch.value == ''){
+				breadCrumbs_path = 	 pepItemDetails.elMenu.selectedItem.path;
+			}
+			else{	*/
 				var categoryPathArr = [];
 				pepItemDetails.itemCategoriesUUID.forEach(function(categoryUUID) {
 					//search the category path of the item in the flat tree from the config object 
@@ -71,7 +75,7 @@
 				//find the largets array path
 				var path = categoryPathArr.find(obj => obj.categoryUUIDpath.length === Math.max.apply(Math, categoryPathArr.map(function(cat) { return cat.categoryUUIDpath.length; })))
 				breadCrumbs_path =  path.categoryUUIDpath;				
-			
+			//}
 			
 			PepOpenCatalogUtils.setBreadCrumbs(breadCrumbs_path, this.elBreadCrumbs);	
 		},
@@ -86,7 +90,8 @@
         
 		menuClick(event){
 			if((pepItemDetails.output.pluginSettings.pages.pep_categories_behavior !== 'all_categories' && event.detail.source.children.length > 0)	||
-			   (pepItemDetails.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && pepItemDetails.screenSize === 'xs'))//not supported in phablets DI-17984
+			   (pepItemDetails.output.pluginSettings.pages.pep_categories_behavior === 'all_categories' && event.detail.source.children.length > 0 && pepItemDetails.screenSize === 'xs'))
+			   //not supported in phablets DI-17984
 				{
 			   		return;
 				}
@@ -116,7 +121,11 @@
                     pepItemDetails.output.pluginSettings = PepOpenCatalogUtils.getPluginSettings();
                     pepItemDetails.output.data = JSON.parse(data.output);                                                             
 				 	pepItemDetails.pepperi_token = data.token.access_token; 
-                    pepItemDetails.output.data_configuration = data.configuation;                            
+				 	if(data.refreshConfig){
+                    	pepItemDetails.output.data_configuration = data.configuation;                            
+					}else{//get the old configuration from session
+						pepItemDetails.output.data_configuration = JSON.parse(window.sessionStorage.getItem("pep_config")).output.data_configuration;	
+					}		
 	    		  	window.sessionStorage.setItem("pep_config",  JSON.stringify({pepperi_token: pepItemDetails.pepperi_token , output: pepItemDetails.output}));
 					pepItemDetails.init();				
                 }
