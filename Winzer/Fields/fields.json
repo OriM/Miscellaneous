@@ -1,0 +1,123 @@
+[
+    {
+        "FieldID": "TSAFeaturesSpecificationsDocuments",
+        "Label": "Features Specifications Documents",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "var features = GetValueByApiName(\"ItemTSAFeaturesHTML\");\nvar specifications = GetValueByApiName(\"ItemTSASpecificationsHTML\");\nvar safetyDS = GetValueByApiName(\"ItemTSASDSText\");\nvar techDS = GetValueByApiName(\"ItemTSATechSheetText\");\nvar lidDS = GetValueByApiName(\"ItemTSALidChartText\");\n\nvar documents = \"\";\nvar html = \"\";\n\nif (features != \"\") {\n  html += \"<h2 class ='pep-section-info-title'>Features</h2>\" + features + \"</ul>\";\n}\nif (specifications != \"\") {\n  html += \"<h2 class ='pep-section-info-title'>Specifications</h2>\" + specifications + \"</ul>\";\n}\n\nif (safetyDS != \"\") {\n  documents += \"<li><a href='\" + safetyDS + \"' target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Safety Data Sheet</a></li>\";\n}\nif (techDS != \"\") {\n  documents += \"<li><a href='\" + techDS + \"' target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Tech Sheet</a></li>\";\n}\nif (lidDS != \"\") {\n  documents += \"<li><a href='\" + lidDS + \"' target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">Lid Chart</a></li>\";\n}\n\nif (documents != \"\") {\n  html += \"<h2 class ='pep-section-info-title'>Documents</h2>\" + \"<ul>\" + documents + \"</ul>\";\n}\n\nvar res = html;\nreturn res;\n",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductInfoDesktop",
+        "Label": "Product Info Desktop",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "var title = GetValueByApiName(\"TSAProductTitle\");\nvar body = GetValueByApiName(\"TSAProductInfoMobile\");\n\nvar html = title + body;\nreturn html;",
+            "ParticipatingFields": [
+                "TSAProductInfoMobile",
+                "TSAProductTitle"
+            ],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductInfoMobile",
+        "Label": "Product Info Mobile",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "var description = GetValueByApiName(\"ItemTSATopTextHTML\");\nvar attributes = GetValueByApiName(\"TSATopAttributesHTML\");\nvar f_s_d = GetValueByApiName(\"TSAFeaturesSpecificationsDocuments\");\n\nvar html = attributes + description + f_s_d;\nreturn html;",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductTitle",
+        "Label": "Product Title",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "var productTitle = GetValueByApiName(\"ItemTSAProductTitleParagraph\");\nvar externlID = GetValueByApiName(\"ItemExternalID\");\nvar content =\n  \"<h1 class ='MainHeader'>\" +\n  productTitle +\n  \"</h1>\" + \" <div class=\\\"pep-info-spacing\\\">\" + externlID + \" </div>\";\nreturn content;",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSATopAttributes",
+        "Label": "Top Attributes",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "var apiNames = [\n  { title: \"Diameter\", apiName: \"ItemTSADiameter\" },\n  { title: \"Drive Type\", apiName: \"ItemTSADriveType\" },\n  { title: \"Finish\", apiName: \"ItemTSAFinish\" },\n  { title: \"Head Style\", apiName: \"ItemTSAHeadStyle\" },\n  { title: \"Length\", apiName: \"ItemTSALength\" },\n  { title: \"Material\", apiName: \"ItemTSAMaterial\" },\n  { title: \"Measurement\", apiName: \"ItemTSAMeasurement\" },\n  { title: \"Origin\", apiName: \"ItemTSAOrigin\" },\n  { title: \"Point Type\", apiName: \"ItemTSAPointType\" },\n  { title: \"Thread Type\", apiName: \"ItemTSAThreadType\" },\n];\n\nvar max = 5;\nvar apiNamesLenth = apiNames.length;\nvar attributesFound = 0;\nvar content = \"\";\nvar i;\nfor (i = 0; i < apiNamesLenth && attributesFound < max; i++) {\n  var apiName = apiNames[i].apiName;\n  var attirbuteValue = GetValueByApiName(apiName);\n  if (attirbuteValue != \"\") {\n    var attirbuteTitle = apiNames[i].title;\n    if (content == \"\")\n    {\n      content += \"<div class=\\\"pep-info-spacing\\\">\";\n    }\n    content += \"<span class=\\\"pep-attribute-title\\\">\" + attirbuteTitle + \":</span> \" + \"<span class=\\\"pep-attribute-value\\\">\" + attirbuteValue + \":</span> \" + \"<br/>\";\n    attributesFound++;\n  }\n}\nif (content != \"\") {\n  content += \"</div>\";\n}\nreturn content;\n",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductTitle",
+        "Label": "Product Title",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "var productTitle = GetValueByApiName(\"ItemTSAProductTitleParagraph\");\nvar externlID = GetValueByApiName(\"ItemExternalID\");\nvar content =\n  \"<h1 class ='MainHeader'>\" +\n  productTitle +\n  \"</h1>\" + \" <div class=\\\"pep-info-spacing\\\">\" + externlID + \" </div>\";\nreturn content;",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    }
+]
