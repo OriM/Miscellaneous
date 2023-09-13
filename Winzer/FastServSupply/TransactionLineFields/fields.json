@@ -71,7 +71,7 @@
         "Type": "String",
         "Format": "String",
         "CalculatedRuleEngine": {
-            "JSFormula": "var productTitle = GetValueByApiName(\"ItemName\");\nvar externlID = GetValueByApiName(\"ItemExternalID\");\nvar content =\n  \"<h1 class ='MainHeader'>\" +\n  productTitle +\n  \"</h1>\" + \" <div class=\\\"pep-info-spacing\\\">\" + externlID + \" </div>\";\nreturn content;",
+            "JSFormula": "var productTitle = GetValueByApiName(\"ItemTSAProductTitleParagraph\");\nvar externlID = GetValueByApiName(\"ItemExternalID\");\nvar content =\n  \"<h1 class ='MainHeader'>\" +\n  productTitle +\n  \"</h1>\" + \" <div class=\\\"pep-info-spacing\\\">\" + externlID + \" </div>\";\nreturn content;",
             "ParticipatingFields": [],
             "CalculatedOn": {
                 "ID": 1,
@@ -111,7 +111,7 @@
         "Type": "String",
         "Format": "String",
         "CalculatedRuleEngine": {
-            "JSFormula": "var productTitle = GetValueByApiName(\"ItemName\");\nvar externlID = GetValueByApiName(\"ItemExternalID\");\nvar content =\n  \"<h1 class ='MainHeader'>\" +\n  productTitle +\n  \"</h1>\" + \" <div class=\\\"pep-info-spacing\\\">\" + externlID + \" </div>\";\nreturn content;",
+            "JSFormula": "var productTitle = GetValueByApiName(\"ItemTSAProductTitleParagraph\");\nvar externlID = GetValueByApiName(\"ItemExternalID\");\nvar content =\n  \"<h1 class ='MainHeader'>\" +\n  productTitle +\n  \"</h1>\" + \" <div class=\\\"pep-info-spacing\\\">\" + externlID + \" </div>\";\nreturn content;",
             "ParticipatingFields": [],
             "CalculatedOn": {
                 "ID": 1,

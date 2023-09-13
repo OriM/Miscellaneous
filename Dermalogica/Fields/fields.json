@@ -1,0 +1,82 @@
+[
+    {
+        "FieldID": "TSAMediumViewContent",
+        "Label": "TSA Medium View Content",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": ["TSAInventoryDescription"],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSALineViewContent",
+        "Label": "TSA Line View Content",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": ["TSAInventoryDescription"],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSALineViewPricingContent",
+        "Label": "TSA Line View Pricing Content",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSALineViewQuantityContent",
+        "Label": "TSA Line View Quantity Content",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": ["TSAPaidQuantity"],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    }
+]

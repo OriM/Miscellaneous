@@ -1,0 +1,2768 @@
+[
+    {
+        "InternalID": 0,
+        "FieldID": "AllowDecimal",
+        "Label": "AllowDecimal",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 10,
+            "Name": "Boolean"
+        },
+        "Type": "Boolean",
+        "Format": "Boolean",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "BrandInternalID",
+        "Label": "BrandInternalID",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 0,
+            "Name": "None"
+        },
+        "Type": "Integer",
+        "Format": "Int64",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "CampaignID",
+        "Label": "CampaignID",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 0,
+            "Name": "None"
+        },
+        "Type": "Integer",
+        "Format": "Int64",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "CaseQuantity",
+        "Label": "CaseQuantity",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 8,
+            "Name": "NumberReal"
+        },
+        "Type": "Number",
+        "Format": "Double",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "CostPrice",
+        "Label": "CostPrice",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 9,
+            "Name": "Currency"
+        },
+        "Type": "Number",
+        "Format": "Decimal",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "CreationDateTime",
+        "Label": "CreationDateTime",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 6,
+            "Name": "DateAndTime"
+        },
+        "Type": "String",
+        "Format": "DateTime",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Dimension1Code",
+        "Label": "Dimension1Code",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Dimension1Name",
+        "Label": "Dimension1Name",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Dimension2Code",
+        "Label": "Dimension2Code",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Dimension2Name",
+        "Label": "Dimension2Name",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Discount",
+        "Label": "Discount",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 15,
+            "Name": "Percentage"
+        },
+        "Type": "Number",
+        "Format": "Decimal",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "ExternalID",
+        "Label": "ExternalID",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "FutureAvailabilityDate",
+        "Label": "FutureAvailabilityDate",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 5,
+            "Name": "Date"
+        },
+        "Type": "String",
+        "Format": "DateTime",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "FutureAvailabilityQuantity",
+        "Label": "FutureAvailabilityQuantity",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 8,
+            "Name": "NumberReal"
+        },
+        "Type": "Number",
+        "Format": "Double",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Hidden",
+        "Label": "Hidden",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 10,
+            "Name": "Boolean"
+        },
+        "Type": "Boolean",
+        "Format": "Boolean",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Image",
+        "Label": "Image",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 20,
+            "Name": "Image"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Image2",
+        "Label": "Image2",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 20,
+            "Name": "Image"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Image3",
+        "Label": "Image3",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 20,
+            "Name": "Image"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Image4",
+        "Label": "Image4",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 20,
+            "Name": "Image"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Image5",
+        "Label": "Image5",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 20,
+            "Name": "Image"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Image6",
+        "Label": "Image6",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 20,
+            "Name": "Image"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "LongDescription",
+        "Label": "LongDescription",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "MainCategory",
+        "Label": "MainCategory",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "MinimumQuantity",
+        "Label": "MinimumQuantity",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 8,
+            "Name": "NumberReal"
+        },
+        "Type": "Number",
+        "Format": "Double",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "ModificationDateTime",
+        "Label": "ModificationDateTime",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 6,
+            "Name": "DateAndTime"
+        },
+        "Type": "String",
+        "Format": "DateTime",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Name",
+        "Label": "Name",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "ParentExternalID",
+        "Label": "ParentExternalID",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Price",
+        "Label": "Price",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 9,
+            "Name": "Currency"
+        },
+        "Type": "Number",
+        "Format": "Decimal",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop1",
+        "Label": "Prop1",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop2",
+        "Label": "Prop2",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop3",
+        "Label": "Prop3",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop4",
+        "Label": "Prop4",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop5",
+        "Label": "Prop5",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop6",
+        "Label": "Prop6",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop7",
+        "Label": "Prop7",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop8",
+        "Label": "Prop8",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "Prop9",
+        "Label": "Prop9",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 16,
+            "Name": "EmptyComboBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "SecondaryPrice",
+        "Label": "SecondaryPrice",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 9,
+            "Name": "Currency"
+        },
+        "Type": "Number",
+        "Format": "Decimal",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 823771,
+        "FieldID": "TSAAmps",
+        "Label": "Amps",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:12:22.03Z",
+        "ModificationDateTime": "2021-01-26T09:12:22.03Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823792,
+        "FieldID": "TSAAngle",
+        "Label": "Angle",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:17:02.703Z",
+        "ModificationDateTime": "2021-01-26T09:17:02.703Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823819,
+        "FieldID": "TSAApplication",
+        "Label": "Application",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:41:26.383Z",
+        "ModificationDateTime": "2021-01-26T09:41:26.383Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824367,
+        "FieldID": "TSAApplicationChart",
+        "Label": "Application Chart",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T11:42:39.177Z",
+        "ModificationDateTime": "2021-01-26T11:42:39.177Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823826,
+        "FieldID": "TSAArborSize",
+        "Label": "Arbor Size",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:45:11.723Z",
+        "ModificationDateTime": "2021-01-26T09:45:11.723Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824425,
+        "FieldID": "TSAAttributeType",
+        "Label": "Attribute Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T12:49:09.367Z",
+        "ModificationDateTime": "2021-01-26T12:49:09.367Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823821,
+        "FieldID": "TSABrand",
+        "Label": "Brand",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:42:00.43Z",
+        "ModificationDateTime": "2021-01-26T09:42:00.43Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823760,
+        "FieldID": "TSACategory1",
+        "Label": "Category 1",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:07:57.593Z",
+        "ModificationDateTime": "2021-01-26T09:07:57.593Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823762,
+        "FieldID": "TSACategory2",
+        "Label": "Category 2",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:08:16.62Z",
+        "ModificationDateTime": "2021-01-26T10:20:10.447Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823765,
+        "FieldID": "TSACategory3",
+        "Label": "Category 3",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:08:38.617Z",
+        "ModificationDateTime": "2021-01-26T09:08:38.617Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823788,
+        "FieldID": "TSAColor",
+        "Label": "Color",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:15:46.817Z",
+        "ModificationDateTime": "2021-01-26T09:15:46.817Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823828,
+        "FieldID": "TSAConductors",
+        "Label": "Conductors",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:45:44.71Z",
+        "ModificationDateTime": "2021-01-26T09:45:44.71Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823789,
+        "FieldID": "TSAConnectionType",
+        "Label": "Connection Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:16:13.5Z",
+        "ModificationDateTime": "2021-01-26T09:16:13.5Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 842685,
+        "FieldID": "TSAContainerSize",
+        "Label": "Container Size",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-23T03:31:22.663Z",
+        "ModificationDateTime": "2021-02-23T03:31:22.663Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693857,
+        "FieldID": "TSACountryOfOrigin",
+        "Label": "Country Of Origin",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:13:49.733Z",
+        "ModificationDateTime": "2020-06-09T19:13:49.733Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693855,
+        "FieldID": "TSACOVID19ETADescription",
+        "Label": "COVID19 ETA Description",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:13:47.63Z",
+        "ModificationDateTime": "2020-06-09T19:13:47.63Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823778,
+        "FieldID": "TSADiameter",
+        "Label": "Diameter",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:13:39.953Z",
+        "ModificationDateTime": "2021-01-26T09:13:39.953Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 827166,
+        "FieldID": "TSADocURLLidChart",
+        "Label": "DocURL_LidChart",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-02T03:26:39Z",
+        "ModificationDateTime": "2021-02-09T16:07:39.687Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 827167,
+        "FieldID": "TSADocURLSafetyDataSheet",
+        "Label": "DocURL_SafetyDataSheet",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-02T03:26:49.437Z",
+        "ModificationDateTime": "2021-02-09T16:08:03.95Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 827168,
+        "FieldID": "TSADocURLTechSheet",
+        "Label": "DocURL_TechSheet",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-02T03:26:58.567Z",
+        "ModificationDateTime": "2021-02-09T16:08:24.233Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823785,
+        "FieldID": "TSADriveType",
+        "Label": "Drive Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:14:43.263Z",
+        "ModificationDateTime": "2021-01-26T09:14:43.263Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693748,
+        "FieldID": "TSAEnforceCaseQTY",
+        "Label": "Enforce Case QTY",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:12:01.05Z",
+        "ModificationDateTime": "2020-06-09T19:12:01.05Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823942,
+        "FieldID": "TSAExternalID",
+        "Label": "External ID",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T11:03:43.117Z",
+        "ModificationDateTime": "2021-01-26T11:03:43.117Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824442,
+        "FieldID": "TSAExternalUUID",
+        "Label": "ExternalUUID",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T16:02:45.797Z",
+        "ModificationDateTime": "2021-01-26T16:02:45.797Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 827169,
+        "FieldID": "TSAFeaturesHTML",
+        "Label": "FeaturesHTML",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-02T03:27:08.913Z",
+        "ModificationDateTime": "2021-03-05T22:24:30.13Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823772,
+        "FieldID": "TSAFinish",
+        "Label": "Finish",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:12:38.923Z",
+        "ModificationDateTime": "2021-01-26T09:12:38.923Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 842683,
+        "FieldID": "TSAFlange",
+        "Label": "Flange",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-23T03:31:02.53Z",
+        "ModificationDateTime": "2021-02-23T03:31:02.53Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823881,
+        "FieldID": "TSAFragrance",
+        "Label": "Fragrance",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T10:08:34.127Z",
+        "ModificationDateTime": "2021-01-26T10:08:34.127Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693749,
+        "FieldID": "TSAFranchiseCost",
+        "Label": "Franchise Cost",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 8,
+            "Name": "NumberReal"
+        },
+        "Type": "Number",
+        "Format": "Double",
+        "CreationDateTime": "2020-06-09T19:12:03.05Z",
+        "ModificationDateTime": "2020-06-09T19:12:03.05Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {
+            "DecimalScale": 4
+        }
+    },
+    {
+        "InternalID": 693793,
+        "FieldID": "TSAFreightType",
+        "Label": "Freight Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:12:43.39Z",
+        "ModificationDateTime": "2020-06-09T19:12:43.39Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823820,
+        "FieldID": "TSAGauge",
+        "Label": "Gauge",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:41:40.857Z",
+        "ModificationDateTime": "2021-01-26T09:41:40.857Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823829,
+        "FieldID": "TSAGrade",
+        "Label": "Grade",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:48:34.827Z",
+        "ModificationDateTime": "2021-01-26T09:48:34.827Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823825,
+        "FieldID": "TSAGrit",
+        "Label": "Grit",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:44:42.043Z",
+        "ModificationDateTime": "2021-01-26T09:44:42.043Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823786,
+        "FieldID": "TSAHeadStyle",
+        "Label": "Head Style",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:15:00.647Z",
+        "ModificationDateTime": "2021-01-26T09:15:00.647Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823812,
+        "FieldID": "TSAHeight",
+        "Label": "Height",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:37:45.403Z",
+        "ModificationDateTime": "2021-01-26T09:37:45.403Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 826235,
+        "FieldID": "TSAImgURL1",
+        "Label": "ImgURL_1",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-01T04:18:19.14Z",
+        "ModificationDateTime": "2021-02-01T04:18:19.14Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 826236,
+        "FieldID": "TSAImgURL2",
+        "Label": "ImgURL_2",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-01T04:18:25.7Z",
+        "ModificationDateTime": "2021-02-01T04:18:25.7Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 826237,
+        "FieldID": "TSAImgURL3",
+        "Label": "ImgURL_3",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-01T04:18:31.777Z",
+        "ModificationDateTime": "2021-02-01T04:18:31.777Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823807,
+        "FieldID": "TSAIndustryNumber",
+        "Label": "Industry Number",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:36:04.42Z",
+        "ModificationDateTime": "2021-01-26T09:36:04.42Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823808,
+        "FieldID": "TSAInsideDiameter",
+        "Label": "Inside Diameter",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:36:26.07Z",
+        "ModificationDateTime": "2021-01-26T09:36:26.07Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693744,
+        "FieldID": "TSAItemClass",
+        "Label": "Item Class",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:11:50.78Z",
+        "ModificationDateTime": "2020-06-09T19:11:50.78Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693805,
+        "FieldID": "TSALandedCost",
+        "Label": "LandedCost",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 8,
+            "Name": "NumberReal"
+        },
+        "Type": "Number",
+        "Format": "Double",
+        "CreationDateTime": "2020-06-09T19:13:02.203Z",
+        "ModificationDateTime": "2020-06-09T19:13:02.203Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {
+            "DecimalScale": 4
+        }
+    },
+    {
+        "InternalID": 823774,
+        "FieldID": "TSALength",
+        "Label": "Length",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:13:11.81Z",
+        "ModificationDateTime": "2021-01-26T09:13:11.81Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824369,
+        "FieldID": "TSALidChart",
+        "Label": "Lid Chart",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T11:44:30.787Z",
+        "ModificationDateTime": "2021-01-26T11:44:30.787Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 851348,
+        "FieldID": "TSALidChartText",
+        "Label": "LidChartText",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-03-03T05:00:28.65Z",
+        "ModificationDateTime": "2021-03-03T05:00:28.65Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823817,
+        "FieldID": "TSAManufacturer",
+        "Label": "Manufacturer",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:39:50.867Z",
+        "ModificationDateTime": "2021-01-26T09:39:50.867Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823773,
+        "FieldID": "TSAMaterial",
+        "Label": "Material",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:12:56.59Z",
+        "ModificationDateTime": "2021-01-26T09:12:56.59Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823782,
+        "FieldID": "TSAMeasurement",
+        "Label": "Measurement",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:14:18.61Z",
+        "ModificationDateTime": "2021-01-26T09:14:18.61Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824377,
+        "FieldID": "TSAMetaKeywords",
+        "Label": "Meta Keywords",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T11:47:29.05Z",
+        "ModificationDateTime": "2021-01-26T11:47:29.05Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823818,
+        "FieldID": "TSAModel",
+        "Label": "Model",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:41:01.923Z",
+        "ModificationDateTime": "2021-01-26T09:41:01.923Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823743,
+        "FieldID": "TSAModifiedOn",
+        "Label": "Modified On",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:03:08.633Z",
+        "ModificationDateTime": "2021-01-26T10:20:52.223Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 842686,
+        "FieldID": "TSANetFill",
+        "Label": "Net Fill",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-23T03:31:31.05Z",
+        "ModificationDateTime": "2021-02-23T03:31:31.05Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823884,
+        "FieldID": "TSANumberofTeeth",
+        "Label": "Number of Teeth",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T10:09:41.94Z",
+        "ModificationDateTime": "2021-01-26T10:09:41.94Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823776,
+        "FieldID": "TSAOrigin",
+        "Label": "Origin",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:13:23.99Z",
+        "ModificationDateTime": "2021-01-26T09:13:23.99Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 842690,
+        "FieldID": "TSAOutsideDiameter",
+        "Label": "Outside Diameter",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-23T03:31:59.923Z",
+        "ModificationDateTime": "2021-02-23T03:31:59.923Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693804,
+        "FieldID": "TSAPackAllIn1Bag",
+        "Label": "Pack All In 1 Bag",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:13:00.437Z",
+        "ModificationDateTime": "2020-06-09T19:13:00.437Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 842688,
+        "FieldID": "TSAPipeSize",
+        "Label": "Pipe Size",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-23T03:31:48.76Z",
+        "ModificationDateTime": "2021-02-23T03:31:48.76Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823787,
+        "FieldID": "TSAPointType",
+        "Label": "Point Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:15:33.027Z",
+        "ModificationDateTime": "2021-01-26T10:36:18.02Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693752,
+        "FieldID": "TSAPriceClass",
+        "Label": "Price Class",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:12:08.503Z",
+        "ModificationDateTime": "2020-06-09T19:12:08.503Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824376,
+        "FieldID": "TSAProductBrochure",
+        "Label": "Product Brochure",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T11:46:54.02Z",
+        "ModificationDateTime": "2021-01-26T11:46:54.02Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823741,
+        "FieldID": "TSAProductTitle",
+        "Label": "Product Title",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:01:36.377Z",
+        "ModificationDateTime": "2021-01-26T10:17:13.163Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 851268,
+        "FieldID": "TSAProductTitleParagraph",
+        "Label": "ProductTitleParagraph",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 3,
+            "Name": "TextArea"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-03-03T01:31:44.997Z",
+        "ModificationDateTime": "2021-03-03T01:31:44.997Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693751,
+        "FieldID": "TSAReadID",
+        "Label": "ReadID",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:12:06.797Z",
+        "ModificationDateTime": "2020-06-09T19:12:06.797Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693750,
+        "FieldID": "TSARecommendedPrice",
+        "Label": "Recommended Price",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 8,
+            "Name": "NumberReal"
+        },
+        "Type": "Number",
+        "Format": "Double",
+        "CreationDateTime": "2020-06-09T19:12:04.897Z",
+        "ModificationDateTime": "2020-06-09T19:12:04.897Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {
+            "DecimalScale": 4
+        }
+    },
+    {
+        "InternalID": 823811,
+        "FieldID": "TSARetainerType",
+        "Label": "Retainer Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:37:26.047Z",
+        "ModificationDateTime": "2021-01-26T09:37:26.047Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824375,
+        "FieldID": "TSASafetyDataSheet",
+        "Label": "Safety Data Sheet",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T11:46:33.26Z",
+        "ModificationDateTime": "2021-01-26T11:46:33.26Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823791,
+        "FieldID": "TSASchedule",
+        "Label": "Schedule",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:16:50.1Z",
+        "ModificationDateTime": "2021-01-26T09:16:50.1Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824374,
+        "FieldID": "TSASDS",
+        "Label": "SDS",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T11:46:13.143Z",
+        "ModificationDateTime": "2021-01-26T11:46:13.143Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 851346,
+        "FieldID": "TSASDSText",
+        "Label": "SDSText",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-03-03T05:00:08.86Z",
+        "ModificationDateTime": "2021-03-03T05:00:08.86Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693753,
+        "FieldID": "TSASecondaryCategory",
+        "Label": "Secondary Category",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:12:10.37Z",
+        "ModificationDateTime": "2020-06-09T19:12:10.37Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693836,
+        "FieldID": "TSAShortDescription",
+        "Label": "Short Description",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:13:32.1Z",
+        "ModificationDateTime": "2020-06-09T19:13:32.1Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823809,
+        "FieldID": "TSASize",
+        "Label": "Size",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:36:44.477Z",
+        "ModificationDateTime": "2021-01-26T09:36:44.477Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823770,
+        "FieldID": "TSASpec",
+        "Label": "Spec",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:12:04.713Z",
+        "ModificationDateTime": "2021-01-26T09:12:04.713Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 827170,
+        "FieldID": "TSASpecificationsHTML",
+        "Label": "SpecificationsHTML",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-02T03:27:16.723Z",
+        "ModificationDateTime": "2021-03-05T22:24:17.463Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823815,
+        "FieldID": "TSASpringType",
+        "Label": "Spring Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:39:25.353Z",
+        "ModificationDateTime": "2021-01-26T09:39:25.353Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823827,
+        "FieldID": "TSAStyle",
+        "Label": "Style",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:45:27.28Z",
+        "ModificationDateTime": "2021-01-26T09:45:27.28Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693858,
+        "FieldID": "TSASupplierName",
+        "Label": "Supplier Name",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:13:51.35Z",
+        "ModificationDateTime": "2020-06-09T19:13:51.35Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693746,
+        "FieldID": "TSATaxable",
+        "Label": "Taxable",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:11:56.11Z",
+        "ModificationDateTime": "2020-06-09T19:11:56.11Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824373,
+        "FieldID": "TSATechSheet",
+        "Label": "Tech Sheet",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T11:45:56.723Z",
+        "ModificationDateTime": "2021-01-26T11:45:56.723Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 851347,
+        "FieldID": "TSATechSheetText",
+        "Label": "TechSheetText",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-03-03T05:00:19.953Z",
+        "ModificationDateTime": "2021-03-03T05:00:19.953Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 842684,
+        "FieldID": "TSATeethPerInch",
+        "Label": "Teeth Per Inch",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-23T03:31:13.277Z",
+        "ModificationDateTime": "2021-02-23T03:31:13.277Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 826233,
+        "FieldID": "TSATextBlockTop",
+        "Label": "TextBlockTop",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 3,
+            "Name": "TextArea"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-01T04:10:35.317Z",
+        "ModificationDateTime": "2021-02-01T04:10:35.317Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823883,
+        "FieldID": "TSAThickness",
+        "Label": "Thickness",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T10:09:15.753Z",
+        "ModificationDateTime": "2021-01-26T10:09:15.753Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693754,
+        "FieldID": "TSAThirdCategory",
+        "Label": "Third Category",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:12:12.297Z",
+        "ModificationDateTime": "2020-06-09T19:12:12.297Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823882,
+        "FieldID": "TSAThreadSize",
+        "Label": "Thread Size",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T10:08:54.787Z",
+        "ModificationDateTime": "2021-01-26T10:08:54.787Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823780,
+        "FieldID": "TSAThreadType",
+        "Label": "Thread Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:13:55.753Z",
+        "ModificationDateTime": "2021-01-26T09:13:55.753Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 827171,
+        "FieldID": "TSATopTextHTML",
+        "Label": "TopTextHTML",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-02T03:27:25.983Z",
+        "ModificationDateTime": "2021-02-02T03:27:25.983Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 842687,
+        "FieldID": "TSATubeSize",
+        "Label": "Tube Size",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-02-23T03:31:40.11Z",
+        "ModificationDateTime": "2021-02-23T03:31:40.11Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823790,
+        "FieldID": "TSAType",
+        "Label": "Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:16:28.157Z",
+        "ModificationDateTime": "2021-01-26T09:16:28.157Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693745,
+        "FieldID": "TSAUnitOfMeasure",
+        "Label": "Unit Of Measure",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:11:53.647Z",
+        "ModificationDateTime": "2020-06-09T19:11:53.647Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693747,
+        "FieldID": "TSAUnitsQuantity",
+        "Label": "Units Quantity",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 7,
+            "Name": "NumberInteger"
+        },
+        "Type": "Integer",
+        "Format": "Int64",
+        "CreationDateTime": "2020-06-09T19:11:58.66Z",
+        "ModificationDateTime": "2020-06-09T19:11:58.66Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823742,
+        "FieldID": "TSAURLSegment",
+        "Label": "URL Segment",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:02:15.48Z",
+        "ModificationDateTime": "2021-01-26T09:02:15.48Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 824426,
+        "FieldID": "TSAValue",
+        "Label": "Value",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T12:49:28.57Z",
+        "ModificationDateTime": "2021-01-26T12:49:28.57Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823810,
+        "FieldID": "TSAWasherType",
+        "Label": "Washer Type",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:37:04.767Z",
+        "ModificationDateTime": "2021-01-26T09:37:04.767Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823813,
+        "FieldID": "TSAWidth",
+        "Label": "Width",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:38:00.923Z",
+        "ModificationDateTime": "2021-01-26T09:38:00.923Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 693803,
+        "FieldID": "TSAWinzerProductNumber",
+        "Label": "Winzer Product Number",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2020-06-09T19:12:58.67Z",
+        "ModificationDateTime": "2020-06-09T19:12:58.67Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 823814,
+        "FieldID": "TSAWireDiameter",
+        "Label": "Wire Diameter",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "2021-01-26T09:38:20.43Z",
+        "ModificationDateTime": "2021-01-26T09:38:20.43Z",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": {}
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "UPC",
+        "Label": "UPC",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "UUID",
+        "Label": "UUID",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "String",
+        "Format": "Guid",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    },
+    {
+        "InternalID": 0,
+        "FieldID": "InternalID",
+        "Label": "InternalID",
+        "Description": null,
+        "IsUserDefinedField": false,
+        "UIType": {
+            "ID": 1,
+            "Name": "TextBox"
+        },
+        "Type": "Integer",
+        "Format": "Int64",
+        "CreationDateTime": "0001-01-01T00:00:00",
+        "ModificationDateTime": "0001-01-01T00:00:00",
+        "Hidden": false,
+        "CSVMappedColumnName": null,
+        "UserDefinedTableSource": null,
+        "CalculatedRuleEngine": null,
+        "TypeSpecificFields": null
+    }
+]

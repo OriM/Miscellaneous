@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Line View</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<main>
+			<style>
+				.derm-line-view {
+					display: flex;
+					gap: 1rem;
+					width: 100%;
+				}
+				.derm-line-view-box {
+                    width: max-content;
+					text-align: center;
+				}
+			</style>
+			<div class="derm-line-view">
+				<div>
+					<p class="title-md">{{Name}}</p>
+					<p class="body-md">{{Type}}</p>
+					<p class="body-md">{{ID}}</p>
+					<p class="body-md">{{Stock}}</p>
+				</div>
+				<div>
+					<div>
+						<h3>SQ Placeholder</h3>
+					</div>
+					<div>
+						<span class="body-xs title ng-star-inserted">Paid Qty</span>
+						<span class="body-sm value">{{PaidQty}}</span>
+					</div>
+					<div>
+						<span class="body-xs title ng-star-inserted">Free Qty</span>
+						<span class="body-sm value">{{FreeQty}}</span>
+					</div>
+				</div>
+				<div class="derm-line-view">
+					<div class="derm-line-view-box">
+						<div class="body-sm title ng-star-inserted">Unit Price</div>
+						<div class="body-md value">{{UnitPrice}}</div>
+					</div>
+					<div class="derm-line-view-box">
+						<div class="body-sm title ng-star-inserted">Ext. Price</div>
+						<div class="body-md value">{{ExtPrice}}</div>
+					</div>
+					<div class="derm-line-view-box">
+						<div class="body-sm title ng-star-inserted">Tax</div>
+						<div class="body-md value">{{Tax}}</div>
+					</div>
+					<div class="derm-line-view-box">
+						<div class="body-sm title ng-star-inserted">Tax Amount</div>
+						<div class="body-md value">{{TaxAmount}}</div>
+					</div>
+					<div class="derm-line-view-box">
+						<div class="body-sm title ng-star-inserted">Tax Amount</div>
+						<div class="body-md value">{{TaxAmount}}</div>
+					</div>
+					<div class="derm-line-view-box">
+						<div class="body-sm title ng-star-inserted">Ext. Price w. Love</div>
+						<div class="body-md value">{{ExtPriceLove}}</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
