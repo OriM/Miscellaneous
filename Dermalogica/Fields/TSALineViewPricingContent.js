@@ -23,6 +23,7 @@ var html = `
     display: flex;
     gap: 1rem;
     width: 100%;
+    justify-content: space-around;
 }
 .derm-line-view-box {
     width: max-content;
