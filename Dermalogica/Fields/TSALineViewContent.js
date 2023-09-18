@@ -8,7 +8,7 @@ var fieldBottom = GetValueByApiName("TSAInventoryDescription");
 
 var html = `
 <div>
-	<p class="title-md">{{Name}}</p>
+	<p style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;" class="title-md">{{Name}}</p>
 	<p class="body-md">{{Type}}</p>
 	<p class="body-md">{{ID}}</p>
 	<p class="body-md">{{Stock}}</p>
