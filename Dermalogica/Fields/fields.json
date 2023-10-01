@@ -111,7 +111,7 @@
         "Format": "String",
         "CalculatedRuleEngine": {
             "JSFormula": "",
-            "ParticipatingFields": [],
+            "ParticipatingFields": ["TSAProductIdPrice","TSAProductTitle","TSAProductDescription"],
             "CalculatedOn": {
                 "ID": 1,
                 "Name": "Always"
@@ -231,7 +231,7 @@
         "Format": "String",
         "CalculatedRuleEngine": {
             "JSFormula": "",
-            "ParticipatingFields": [],
+            "ParticipatingFields": ["TSAProductIngredients","TSAProductHowWorks"],
             "CalculatedOn": {
                 "ID": 1,
                 "Name": "Always"

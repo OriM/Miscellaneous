@@ -1,5 +1,5 @@
-var howWorks = GetValueByApiName("");
-var ingredients = GetValueByApiName("");
+var howWorks = GetValueByApiName("TSAProductHowWorks");
+var ingredients = GetValueByApiName("TSAProductIngredients");
 
 var html = `
     <style>

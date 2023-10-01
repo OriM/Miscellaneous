@@ -1,5 +1,5 @@
-var howWorksTitle = GetValueByApiName("");
-var howWorksDescription = GetValueByApiName("");
+var howWorksTitle = "How It Works";//GetValueByApiName("");
+var howWorksDescription = GetValueByApiName("ItemTSAHowItWorks");
 
 var html = `
             <div>

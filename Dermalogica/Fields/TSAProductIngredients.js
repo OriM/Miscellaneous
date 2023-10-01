@@ -1,5 +1,5 @@
-var ingredientsTitle = GetValueByApiName("");
-var ingredientsDescription = GetValueByApiName("");
+var ingredientsTitle = "Ingredients"; //GetValueByApiName("");
+var ingredientsDescription = GetValueByApiName("ItemTSAIngredients");
 
 var html = `
         <div>
