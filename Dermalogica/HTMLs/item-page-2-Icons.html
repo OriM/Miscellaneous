@@ -1,0 +1,92 @@
+<style>
+	.icon-list {
+		display: flex;
+		align-items: start;
+		gap: 1.75rem;
+		padding-top: 1.5rem;
+		flex-wrap: wrap;
+	}
+	.icon-bullet {
+		max-width: 6rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		transition: transform 0.25s ease-in-out;
+	}
+	.icon {
+		width: 4rem;
+		height: auto;
+		margin-bottom: 0.25rem;
+		opacity: 0.8;
+		transition: opacity 0.25s ease-in-out;
+		fill: hsl(var(--pep-color-system-primary-h), var(--pep-color-system-primary-s), var(--pep-color-system-primary-l));
+	}
+	.icon-bullet:hover {
+		transform: scale(1.025);
+	}
+	.icon:hover {
+		opacity: 1;
+	}
+	@media (max-width: 720px) {
+		.icon-list {
+			gap: 1.25rem;
+		}
+		.icon-bullet {
+			max-width: 5rem;
+		}
+		.icon {
+			width: 3rem;
+		}
+	}
+</style>
+
+<div stye="icon-list">
+	<!-- !! -->
+	<!-- Change display from unset to hidden to remove from HTML -->
+	<span class="icon-bullet" style="display: unset">
+		<!-- ?? -->
+		<!-- Should the SVG be injected like other variables? -->
+		<svg class="icon" width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50" r="50" />
+		</svg>
+		<p class="body-xs color-dimmed">{{IconTitle}}</p>
+	</span>
+	<span class="icon-bullet" style="display: unset">
+		<svg class="icon" width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50" r="50" />
+		</svg>
+		<p class="body-xs color-dimmed">{{IconTitle}}</p>
+	</span>
+	<span class="icon-bullet" style="display: unset">
+		<svg class="icon" width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50" r="50" />
+		</svg>
+		<p class="body-xs color-dimmed">{{IconTitle}}</p>
+	</span>
+	<span class="icon-bullet" style="display: unset">
+		<svg class="icon" width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50" r="50" />
+		</svg>
+		<p class="body-xs color-dimmed">{{IconTitle}}</p>
+	</span>
+	<span class="icon-bullet" style="display: unset">
+		<svg class="icon" width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50" r="50" />
+		</svg>
+		<p class="body-xs color-dimmed">{{IconTitle}}</p>
+	</span>
+	<span class="icon-bullet" style="display: unset">
+		<svg class="icon" width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50" r="50" />
+		</svg>
+		<p class="body-xs color-dimmed">{{IconTitle}}</p>
+	</span>
+	<span class="icon-bullet" style="display: unset">
+		<svg class="icon" width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50" r="50" />
+		</svg>
+		<p class="body-xs color-dimmed">{{IconTitle}}</p>
+	</span>
+</div>
