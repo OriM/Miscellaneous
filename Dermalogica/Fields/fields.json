@@ -78,5 +78,167 @@
             },
             "Temporary": true
         }
+    },
+    {
+        "FieldID": "TSAProductTitle",
+        "Label": "TSA Product Title",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductTitlesDesktop",
+        "Label": "TSA Product Titles Desktop",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductIdPrice",
+        "Label": "TSA Product Id and Price",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductIcons",
+        "Label": "TSA Product Icons",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductDescription",
+        "Label": "TSA Product Description",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductHowWorks",
+        "Label": "TSA Product How It Works",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductIngredients",
+        "Label": "TSA Product Ingredients",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductInfo",
+        "Label": "TSA Product Info",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
     }
+    
+    
 ]
