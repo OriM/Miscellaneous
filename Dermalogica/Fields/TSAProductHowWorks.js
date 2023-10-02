@@ -3,8 +3,8 @@ var howWorksDescription = GetValueByApiName("ItemTSAHowItWorks");
 
 var html = `
             <div>
-                <h3 class="title-3xl">{{HowWorksTitle}}</h3>
-                <p class="body-md">{{HowWorksDescription}}</p>
+                <h3 style="font-family: Helvetica !important;" class="title-3xl">{{HowWorksTitle}}</h3>
+                <p style="font-family: Helvetica !important;" class="body-md">{{HowWorksDescription}}</p>
             </div>
     `;
 

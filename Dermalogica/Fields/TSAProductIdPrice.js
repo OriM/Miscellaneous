@@ -11,8 +11,8 @@ var currency = GetValueByApiName("Transaction.Currency");
 var formattedPrice = currencyFormat(itemUnitPrice, currency);
 
 var html = `
-        <p class="body-lg">{{ID}}</p>
-        <p class="body-lg">{{Price}}</p>
+        <p style="font-family: Helvetica;" class="body-lg">{{ID}}</p>
+        <p style="font-family: Helvetica;" class="body-lg">{{Price}}</p>
     `;
 
 var res = html;

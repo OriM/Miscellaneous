@@ -40,7 +40,7 @@ var html = `<style>
                     margin-bottom: 0.25rem;
                     opacity: 0.8;
                     transition: opacity 0.25s ease-in-out;
-                    fill: hsl(var(--pep-color-system-primary-h), var(--pep-color-system-primary-s), var(--pep-color-system-primary-l));
+                    fill: hsl(var(--pep-color-user-primary-h), var(--pep-color-user-primary-s), var(--pep-color-user-primary-l));
                 }
                 .icon-bullet:hover {
                     transform: scale(1.025);

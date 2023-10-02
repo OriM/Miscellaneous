@@ -7,11 +7,11 @@ var itemCode = GetValueByApiName("ItemExternalID");
 var fieldBottom = GetValueByApiName("TSAInventoryDescription");
 
 var html = `
-<div>
-	<p style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;" class="title-md">{{Name}}</p>
-	<p class="body-md">{{Type}}</p>
-	<p class="body-md">{{ID}}</p>
-	<p class="body-md">{{Stock}}</p>
+<div style="font-family: Helvetica;">
+	<p style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-family: Helvetica !important" class="title-md">{{Name}}</p>
+	<p style="font-family: Helvetica !important" class="body-md">{{Type}}</p>
+	<p style="font-family: Helvetica !important" class="body-md">{{ID}}</p>
+	<p style="font-family: Helvetica !important" class="body-md">{{Stock}}</p>
 </div>
 `;
 

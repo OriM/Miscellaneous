@@ -19,6 +19,7 @@ var formattedPrice = currencyFormat(itemUnitPrice, currency);
 var html = `<div>
   <style>
       .derm-card-view {
+          font-family: Helvetica !important;
           display: flex;
           flex-direction: column;
           width: 100%;
@@ -30,12 +31,12 @@ var html = `<div>
       }
   </style>
   <div class="derm-card-view">
-  <p style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;"class="title-lg">{{Name}}</p>
-      <p class="body-md">{{Type}}</p>
-      <p class="body-md">{{Stock}}</p>
+  <p style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; font-family: Helvetica !important;"class="title-lg">{{Name}}</p>
+      <p style="font-family: Helvetica !important" class="body-md">{{Type}}</p>
+      <p style="font-family: Helvetica !important" class="body-md">{{Stock}}</p>
       <span class="derm-card-view-box">
-          <p class="body-md">{{ID}}</p>
-          <p class="body-md">{{Price}}</p>
+          <p style="font-family: Helvetica !important" class="body-md">{{ID}}</p>
+          <p style="font-family: Helvetica !important" class="body-md">{{Price}}</p>
       </span>
   </div>
 </div>

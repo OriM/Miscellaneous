@@ -3,8 +3,8 @@ var ingredientsDescription = GetValueByApiName("ItemTSAIngredients");
 
 var html = `
         <div>
-            <h3 class="title-3xl">{{IngredientsTitle}}</h3>
-            <p class="body-md">{{IngredientsDescription}}</p>
+            <h3 style="font-family: Helvetica !important" class="title-3xl">{{IngredientsTitle}}</h3>
+            <p style="font-family: Helvetica !important" class="body-md">{{IngredientsDescription}}</p>
         </div>
     `;
 

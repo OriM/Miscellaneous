@@ -238,7 +238,31 @@
             },
             "Temporary": true
         }
+    },
+    {
+        "FieldID": "TSAProductInfoMobile",
+        "Label": "TSA Product Info Mobile",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": ["TSAProductInfo","TSAProductDescription","TSAProductIcons","TSAProductIdPrice"],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
     }
+
+
+
+
     
     
 ]

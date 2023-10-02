@@ -8,6 +8,11 @@ var html = `
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
         }
+        @media (max-width: 720px) {
+            .slipt-two-even {
+                grid-template-columns: 1fr;
+            }
+        }
         </style>
     <section id="" class="slipt-two-even">
         <div>
@@ -23,8 +28,3 @@ var res = html;
 res = res.replace("{{HowWorks}}", howWorks);
 res = res.replace("{{Ingredients}}", ingredients);
 return res;
-
-
-
-
-

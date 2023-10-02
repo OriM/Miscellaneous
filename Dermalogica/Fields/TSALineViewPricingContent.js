@@ -20,6 +20,7 @@ var extPriceTax = currencyFormat(GetValueByApiName("TSATotalPricePerLineTaxIncl"
 var html = `
 <style>
 .derm-line-view {
+    font-family: Helvetica;
     display: flex;
     gap: 1rem;
     width: 100%;

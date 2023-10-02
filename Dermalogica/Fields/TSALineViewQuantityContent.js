@@ -6,12 +6,12 @@ var freeQty = GetValueByApiName("TSAGWPFreeLaunchAddFreeItems");
 
 var html = `
     <div>
-        <span class="body-xs title ng-star-inserted">Paid Qty</span>
-        <span class="body-sm value">{{PaidQty}}</span>
+        <span style="font-family: Helvetica !important" class="body-xs title ng-star-inserted">Paid Qty</span>
+        <span style="font-family: Helvetica !important" class="body-sm value">{{PaidQty}}</span>
     </div>
     <div>
-        <span class="body-xs title ng-star-inserted">Free Qty</span>
-        <span class="body-sm value">{{FreeQty}}</span>
+        <span style="font-family: Helvetica !important" class="body-xs title ng-star-inserted">Free Qty</span>
+        <span style="font-family: Helvetica !important" class="body-sm value">{{FreeQty}}</span>
     </div>
 `;
 
