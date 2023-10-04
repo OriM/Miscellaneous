@@ -1,5 +1,8 @@
 var howWorks = GetValueByApiName("TSAProductHowWorks");
+var howToUse = GetValueByApiName("TSAProductHowToUse");
 var ingredients = GetValueByApiName("TSAProductIngredients");
+var innovation = GetValueByApiName("TSAProductInnovation");
+var disclaimer = GetValueByApiName("TSAProductDisclaimer");
 
 var html = `
     <style>
@@ -21,10 +24,22 @@ var html = `
         <div>
             {{Ingredients}}
         </div>
+        <div>
+            {{HowToUse}}
+        </div>
+        <div>
+            {{Innovation}}
+        </div>
     </section>
+    <div style="display:flex; flex-direction: column; gap: var(--pep-spacing-lg)">
+        {{Disclaimer}}
+    </div>
     `;
 
 var res = html;
 res = res.replace("{{HowWorks}}", howWorks);
+res = res.replace("{{HowToUse}}", howToUse);
 res = res.replace("{{Ingredients}}", ingredients);
+res = res.replace("{{Innovation}}", innovation);
+res = res.replace("{{Disclaimer}}", disclaimer);
 return res;

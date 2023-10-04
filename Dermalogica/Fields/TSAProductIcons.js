@@ -1,8 +1,8 @@
-var iconDisplay_0 = 'unset';
-var iconDisplay_1 = 'unset';
-var iconDisplay_2 = 'unset';
-var iconDisplay_3 = 'unset';
-var iconDisplay_4 = 'unset';
+var iconDisplay_0 = GetValueByApiName("ItemTSAGlutenFree") ? 'unset' : 'none';
+var iconDisplay_1 = GetValueByApiName("ItemTSAVegan") ? 'unset' : 'none';
+var iconDisplay_2 = GetValueByApiName("ItemTSANoArtificialFragColor") ? 'unset' : 'none';
+var iconDisplay_3 = GetValueByApiName("ItemTSAParabenFree") ? 'unset' : 'none';
+var iconDisplay_4 = GetValueByApiName("ItemTSACrueltyFree") ? 'unset' : 'none';
 
 var iconTitle_0 = "GlutenFree"; //GetValueByApiName("ItemTSAGlutenFree");
 var iconTitle_1 = "Vegan"; //GetValueByApiName("ItemTSAVegan");
