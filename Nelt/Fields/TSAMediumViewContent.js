@@ -6,14 +6,13 @@ function currencyFormat(num, currency) {
 }
 
 // get all varaiables
-var Price = GetValueByApiName('');
-var Sku = GetValueByApiName('');
-var PriceVAT = GetValueByApiName('');
-var Supplies = GetValueByApiName('');
-var Packaging = GetValueByApiName('');
-var LastOrder = GetValueByApiName('');
-var Delivered = GetValueByApiName('');
-var formattedPrice = currencyFormat(itemUnitPrice, currency);
+var Price =     GetValueByApiName('TSAPPMBaseUnitPriceAfter1');
+var Sku =       GetValueByApiName('ItemExternalID');
+var PriceVAT =  GetValueByApiName('TSAPPMTaxUnitPriceAfter1');
+var Supplies =  GetValueByApiName('TSAInventory');
+var Packaging = GetValueByApiName('ItemTSACSQuantity');
+var LastOrder = GetValueByApiName('LastOrderItemDate');
+var Delivered = GetValueByApiName('TSADeliveredQty');
 
 var html = `<div>
 <style>
@@ -33,12 +32,12 @@ var html = `<div>
 </style>
 <div class="nelt-card-ver">
     <div class="nelt-one-liner">
-        <p class="body-md title ng-star-inserted">Cena:</p>
-        <p class="body-md value">{{Price}}</p>
-    </div>
-    <div class="nelt-one-liner">
         <p class="body-md title ng-star-inserted">SKU:</p>
         <p class="body-md value">{{Sku}}</p>
+    </div>
+    <div class="nelt-one-liner">
+        <p class="body-md title ng-star-inserted">Cena:</p>
+        <p class="body-md value">{{Price}}</p>
     </div>
     <div class="nelt-one-liner">
         <p class="body-md title ng-star-inserted">Cena sa PDV-om:</p>
@@ -72,6 +71,5 @@ res = res.replace('{{Supplies}}', Supplies );
 res = res.replace('{{Packaging}}', Packaging );
 res = res.replace('{{LastOrder}}', LastOrder );
 res = res.replace('{{Delivered}}', Delivered );
-res = res.replace('{{Price}}', formattedPrice);
 
 return res;

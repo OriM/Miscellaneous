@@ -12,6 +12,13 @@
         "CalculatedRuleEngine": {
             "JSFormula": "",
             "ParticipatingFields": [
+                "TSAPPMBaseUnitPriceAfter1",
+                "ItemExternalID",
+                "TSAPPMTaxUnitPriceAfter1",
+                "TSAInventory",
+                "ItemTSACSQuantity",
+                "LastOrderItemDate",
+                "TSADeliveredQty"
             ],
             "CalculatedOn": {
                 "ID": 1,
@@ -94,7 +101,10 @@
         "Format": "String",
         "CalculatedRuleEngine": {
             "JSFormula": "",
-            "ParticipatingFields": [],
+            "ParticipatingFields": [
+                "TSAProductInfoTitle",
+                "TSAProductInfoContent"
+            ],
             "CalculatedOn": {
                 "ID": 1,
                 "Name": "Always"
