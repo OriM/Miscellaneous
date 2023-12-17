@@ -1,0 +1,374 @@
+{
+        "InternalID": 6429914,
+        "Type": "Card",
+        "Title": "Buyer",
+        "Hidden": false,
+        "CreationDateTime": "2023-12-14T12:24:07Z",
+        "ModificationDateTime": "2023-12-17T08:31:34Z",
+        "Context": {
+            "Object": {
+                "Resource": "transactions",
+                "InternalID": 330914,
+                "Name": "B2B"
+            },
+            "Name": "OrderCenterView3",
+            "ScreenSize": "Tablet",
+            "Profile": {
+                "InternalID": 78776,
+                "UUID": "e73932cf-f11b-4664-b5cc-664faf311b3d",
+                "CreationDateTime": "2023-10-23T07:18:59Z",
+                "Hidden": false,
+                "ModificationDateTime": "2023-10-23T07:18:59Z",
+                "Name": "Buyer",
+                "ParentInternalID": 78774
+            }
+        },
+        "ListData": {},
+        "Fields": [
+            {
+                "FieldID": "ItemName",
+                "Type": "TextBox",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "Size": {
+                        "Width": 7,
+                        "Height": 2
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSAWishlist",
+                "Type": "Boolean",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": false,
+                "Layout": {
+                    "Origin": {
+                        "X": 7,
+                        "Y": 0
+                    },
+                    "Size": {
+                        "Width": 1,
+                        "Height": 2
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Center"
+                    }
+                }
+            },
+            {
+                "FieldID": "ObjectMenu",
+                "Type": "InternalLink",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": false,
+                "Layout": {
+                    "Origin": {
+                        "X": 8,
+                        "Y": 0
+                    },
+                    "Size": {
+                        "Width": 1,
+                        "Height": 2
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "Image",
+                "Type": "Image",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 0,
+                        "Y": 2
+                    },
+                    "Size": {
+                        "Width": 3,
+                        "Height": 7
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Center"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSAPPMBaseUnitPriceAfter1",
+                "Type": "Currency",
+                "Title": "Cena:",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 3,
+                        "Y": 2
+                    },
+                    "Size": {
+                        "Width": 6,
+                        "Height": 1
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "ItemExternalID",
+                "Type": "TextBox",
+                "Title": "SKU",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "Size": {
+                        "Width": 6,
+                        "Height": 1
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSAPPMTaxUnitPriceAfter1",
+                "Type": "Currency",
+                "Title": "Cena sa PDV-om:",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 3,
+                        "Y": 4
+                    },
+                    "Size": {
+                        "Width": 6,
+                        "Height": 1
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSAInventory",
+                "Type": "NumberReal",
+                "Title": "Zalihe:",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 3,
+                        "Y": 5
+                    },
+                    "Size": {
+                        "Width": 6,
+                        "Height": 1
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "ItemTSACSQuantity",
+                "Type": "NumberInteger",
+                "Title": "Pakovanje:",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 3,
+                        "Y": 6
+                    },
+                    "Size": {
+                        "Width": 6,
+                        "Height": 1
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "LastOrderItemDate",
+                "Type": "Date",
+                "Title": "Poslednja porudžbina:",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 3,
+                        "Y": 7
+                    },
+                    "Size": {
+                        "Width": 6,
+                        "Height": 1
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSADeliveredQty",
+                "Type": "NumberReal",
+                "Title": "Isporučeno:",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 3,
+                        "Y": 8
+                    },
+                    "Size": {
+                        "Width": 6,
+                        "Height": 1
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSAAOQMUOM1",
+                "Type": "ComboBox",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": false,
+                "Layout": {
+                    "Origin": {
+                        "X": 0,
+                        "Y": 9
+                    },
+                    "Size": {
+                        "Width": 4,
+                        "Height": 2
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSAAOQMQuantity1",
+                "Type": "NumberRealQuantitySelector",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": false,
+                "Layout": {
+                    "Origin": {
+                        "X": 4,
+                        "Y": 9
+                    },
+                    "Size": {
+                        "Width": 5,
+                        "Height": 2
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            }
+        ],
+        "Rows": [
+            {
+                "Mode": "MatchParent"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            }
+        ],
+        "Columns": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
+    }
