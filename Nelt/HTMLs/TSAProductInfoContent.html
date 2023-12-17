@@ -1,0 +1,26 @@
+<div>
+	<style>
+		.nelt-card-ver {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			text-align: left;
+		}
+		.nelt-one-liner {
+			display: flex;
+			flex-direction: row;
+			gap: 0.25rem;
+			gap: variables.$spacing-xs;
+			width: 100%;
+		}
+	</style>
+	<p class="body-lg color-dimmed">{{ProductDescription}}</p>
+	<div class="nelt-one-liner">
+		<p class="body-lg title ng-star-inserted">ID:</p>
+		<p class="body-lg value">{{ID}}</p>
+	</div>
+	<div class="nelt-one-liner">
+		<p class="body-lg title ng-star-inserted">Cena:</p>
+		<p class="body-lg value">{{Price}}</p>
+	</div>
+</div>
