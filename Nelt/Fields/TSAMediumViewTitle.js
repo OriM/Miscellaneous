@@ -1,6 +1,7 @@
-var productDescription = GetValueByApiName("ItemName");
-var html = '<h2 style="font-family: Helvetica !important;" class="color-user-primary title-4xl">{{ProductName}}</h2>';
+var CardTitle = GetValueByApiName('');
+var html =
+	'<h2 style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;" class="color-user-primary title-4xl">{{ProductName}}</h2>';
 
 var res = html;
-res = res.replace("{{ProductName}}", productDescription);
+res = res.replace('{{CardTitle}}', CardTitle );
 return res;
