@@ -1,0 +1,375 @@
+[
+    {
+        "FieldID": "TSAMediumViewContent",
+        "Label": "TSA Medium View Content",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [
+                "TSAInventoryDescription"
+            ],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSALineViewContent",
+        "Label": "TSA Line View Content",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [
+                "TSAInventoryDescription"
+            ],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSALineViewPricingContent",
+        "Label": "TSA Line View Pricing Content",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSALineViewQuantityContent",
+        "Label": "TSA Line View Quantity Content",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [
+                "TSAPaidQuantity"
+            ],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductTitle",
+        "Label": "TSA Product Title",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductTitlesDesktop",
+        "Label": "TSA Product Titles Desktop",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [
+                "TSAProductIdPrice",
+                "TSAProductTitle",
+                "TSAProductDescription"
+            ],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductIdPrice",
+        "Label": "TSA Product Id and Price",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductIcons",
+        "Label": "TSA Product Icons",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductDescription",
+        "Label": "TSA Product Description",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductHowWorks",
+        "Label": "TSA Product How It Works",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductIngredients",
+        "Label": "TSA Product Ingredients",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductInfo",
+        "Label": "TSA Product Info",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [
+                "TSAProductIngredients",
+                "TSAProductHowWorks"
+            ],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductInfoMobile",
+        "Label": "TSA Product Info Mobile",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [
+                "TSAProductInfo",
+                "TSAProductDescription",
+                "TSAProductIcons",
+                "TSAProductIdPrice"
+            ],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAPromoDescription",
+        "Label": "Promo Description",
+        "Description": "",
+        "IsUserDefinedField": true,
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CSVMappedColumnName": "Promo Description",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [
+                "TransactionAccountTSAPriceListProperty",
+                "ItemExternalID",
+                "ItemMainCategory",
+                "ItemProp1",
+                "ItemProp2",
+                "TSAQTYBreakItemValid",
+                "TSATwoferItemValid",
+                "TransactionTSAProfDiscountDescription",
+                "TransactionTSAProfDiscountValid",
+                "TransactionTSAQTYBreakDescription",
+                "TransactionTSATwoferdescription",
+                "TransactionTSATwofervalid"
+            ],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": false
+        }
+    },
+    {
+        "FieldID": "TSAProductHowToUse",
+        "Label": "TSA Product How To Use",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductInnovation",
+        "Label": "TSA Product Innovation",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    },
+    {
+        "FieldID": "TSAProductDisclaimer",
+        "Label": "TSA Product Disclaimer",
+        "Description": "",
+        "UIType": {
+            "ID": 56,
+            "Name": "RichTextHTML"
+        },
+        "Type": "String",
+        "Format": "String",
+        "CalculatedRuleEngine": {
+            "JSFormula": "",
+            "ParticipatingFields": [],
+            "CalculatedOn": {
+                "ID": 1,
+                "Name": "Always"
+            },
+            "Temporary": true
+        }
+    }
+]

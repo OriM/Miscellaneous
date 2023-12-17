@@ -1,0 +1,321 @@
+[
+    {
+        "InternalID": 5012347,
+        "Type": "Form",
+        "Title": "Rep",
+        "Hidden": false,
+        "CreationDateTime": "2021-05-20T14:07:10Z",
+        "ModificationDateTime": "2021-05-20T14:45:29Z",
+        "Context": {
+            "Object": {
+                "Resource": "transactions",
+                "InternalID": 295130,
+                "Name": "FastServ Open Catalog"
+            },
+            "Name": "OrderCenterItemDetails",
+            "ScreenSize": "Tablet",
+            "Profile": {
+                "InternalID": 68915,
+                "UUID": "2bbd1698-ff8b-47e7-951e-999141adb668",
+                "CreationDateTime": "2020-11-18T13:52:07Z",
+                "Hidden": false,
+                "ModificationDateTime": "2020-11-18T13:52:07Z",
+                "Name": "Rep",
+                "ParentInternalID": null
+            }
+        },
+        "Fields": [
+            {
+                "FieldID": "ItemFilmstripImages",
+                "Type": "Images",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": false,
+                "Layout": {
+                    "Origin": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "Size": {
+                        "Width": 4,
+                        "Height": 7
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSAProductInfoDesktop",
+                "Type": "RichTextHTML",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 4,
+                        "Y": 0
+                    },
+                    "Size": {
+                        "Width": 4,
+                        "Height": 17
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            }
+        ],
+        "Rows": [
+            {
+                "Mode": "MatchParent"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            }
+        ],
+        "Columns": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
+    },
+    {
+        "Type": "Form",
+        "Title": "Rep - Phablet",
+        "Hidden": false,
+        "Context": {
+            "Object": {
+                "Resource": "transactions",
+                "InternalID": "CHANGE TO REAL INTERNAL ID"
+            },
+            "Name": "OrderCenterItemDetails",
+            "ScreenSize": "Phablet",
+            "Profile": {
+                "InternalID": "CHANGE TO REAL INTERNAL ID"
+            }
+        },
+        "Fields": [
+            {
+                "FieldID": "TSAProductTitle",
+                "Type": "RichTextHTML",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "Size": {
+                        "Width": 1,
+                        "Height": 3
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "ItemFilmstripImages",
+                "Type": "Images",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": false,
+                "Layout": {
+                    "Origin": {
+                        "X": 0,
+                        "Y": 3
+                    },
+                    "Size": {
+                        "Width": 1,
+                        "Height": 6
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            },
+            {
+                "FieldID": "TSAProductInfoMobile",
+                "Type": "RichTextHTML",
+                "Title": "",
+                "Mandatory": false,
+                "ReadOnly": true,
+                "Layout": {
+                    "Origin": {
+                        "X": 0,
+                        "Y": 9
+                    },
+                    "Size": {
+                        "Width": 1,
+                        "Height": 21
+                    }
+                },
+                "Style": {
+                    "Alignment": {
+                        "Vertical": "Center",
+                        "Horizontal": "Left"
+                    }
+                }
+            }
+        ],
+        "Rows": [
+            {
+                "Mode": "MatchParent"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            },
+            {
+                "Mode": "Fixed"
+            }
+        ],
+        "Columns": [
+            {}
+        ]
+    }
+]
