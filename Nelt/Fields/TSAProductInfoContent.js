@@ -10,49 +10,50 @@ var Delivered = GetValueByApiName('TSADeliveredQty');
 var html = `
 <div>
 	<style>
-		.nelt-card-ver {
+		.nelt-item-ver {
 			display: flex;
 			flex-direction: column;
 			width: 100%;
 			text-align: left;
+			gap: 0.5rem;
 		}
 		.nelt-one-liner {
 			display: flex;
 			flex-direction: row;
 			gap: 0.25rem;
-			gap: variables.$spacing-xs;
 			width: 100%;
 		}
 	</style>
-
-	<div class="nelt-one-liner">
-        <p class="body-md title ng-star-inserted">SKU:</p>
-        <p class="body-md value">{{Sku}}</p>
-    </div>
-    <div class="nelt-one-liner">
-        <p class="body-md title ng-star-inserted">Cena:</p>
-        <p class="body-md value">{{Price}}</p>
-    </div>
-    <div class="nelt-one-liner">
-        <p class="body-md title ng-star-inserted">Cena sa PDV-om:</p>
-        <p class="body-md value">{{PriceVAT}}</p>
-    </div>
-    <div class="nelt-one-liner">
-        <p class="body-md title ng-star-inserted">Zalihe:</p>
-        <p class="body-md value">{{Supplies}}</p>
-    </div>
-    <div class="nelt-one-liner">
-        <p class="body-md title ng-star-inserted">Pakovanje:</p>
-        <p class="body-md value">{{Packaging}}</p>
-    </div>
-    <div class="nelt-one-liner">
-        <p class="body-md title ng-star-inserted">Poslednja porudzbina:</p>
-        <p class="body-md value">{{LastOrder}}</p>
-    </div>
-    <div class="nelt-one-liner">
-        <p class="body-md title ng-star-inserted">Isporuceno:</p>
-        <p class="body-md value">{{Delivered}}</p>
-    </div>
+	<div class="nelt-item-ver">
+		<div class="nelt-one-liner">
+			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">SKU:</p>
+			<p style="margin: 0" class="body-md bold">{{Sku}}</p>
+		</div>
+		<div class="nelt-one-liner">
+			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Cena:</p>
+			<p style="margin: 0" class="body-md bold">{{Price}}</p>
+		</div>
+		<div class="nelt-one-liner">
+			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Cena sa PDV-om:</p>
+			<p style="margin: 0" class="body-md bold">{{PriceVAT}}</p>
+		</div>
+		<div class="nelt-one-liner">
+			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Zalihe:</p>
+			<p style="margin: 0" class="body-md bold">{{Supplies}}</p>
+		</div>
+		<div class="nelt-one-liner">
+			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Pakovanje:</p>
+			<p style="margin: 0" class="body-md bold">{{Packaging}}</p>
+		</div>
+		<div class="nelt-one-liner">
+			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Poslednja porudzbina:</p>
+			<p style="margin: 0" class="body-md bold">{{LastOrder}}</p>
+		</div>
+		<div class="nelt-one-liner">
+			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Isporuceno:</p>
+			<p style="margin: 0" class="body-md bold">{{Delivered}}</p>
+		</div>
+	</div>
 </div>
 `;
 

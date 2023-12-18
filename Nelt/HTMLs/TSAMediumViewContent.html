@@ -5,43 +5,44 @@
 			flex-direction: column;
 			width: 100%;
 			text-align: left;
+			gap: 0.5rem;
 		}
 		.nelt-one-liner {
 			display: flex;
 			flex-direction: row;
 			gap: 0.25rem;
-			gap: variables.$spacing-xs;
 			width: 100%;
+			padding-inline-start: 0.125rem;
 		}
 	</style>
 	<div class="nelt-card-ver">
 		<div class="nelt-one-liner">
-			<p class="body-md title ng-star-inserted">Cena:</p>
-			<p class="body-md value">{{Price}}</p>
+			<p style="margin: 0" class="body-md title ng-star-inserted">SKU:</p>
+			<p style="margin: 0" class="body-md bold">{{Sku}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p class="body-md title ng-star-inserted">SKU:</p>
-			<p class="body-md value">{{Sku}}</p>
+			<p style="margin: 0" class="body-md title ng-star-inserted">Cena:</p>
+			<p style="margin: 0" class="body-md bold">{{Price}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p class="body-md title ng-star-inserted">Cena sa PDV-om:</p>
-			<p class="body-md value">{{PriceVAT}}</p>
+			<p style="margin: 0" class="body-md title ng-star-inserted">Cena sa PDV-om:</p>
+			<p style="margin: 0" class="body-md bold">{{PriceVAT}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p class="body-md title ng-star-inserted">Zalihe:</p>
-			<p class="body-md value">{{Supplies}}</p>
+			<p style="margin: 0" class="body-md title ng-star-inserted">Zalihe:</p>
+			<p style="margin: 0" class="body-md bold">{{Supplies}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p class="body-md title ng-star-inserted">Pakovanje:</p>
-			<p class="body-md value">{{Packaging}}</p>
+			<p style="margin: 0" class="body-md title ng-star-inserted">Pakovanje:</p>
+			<p style="margin: 0" class="body-md bold">{{Packaging}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p class="body-md title ng-star-inserted">Poslednja porudzbina:</p>
-			<p class="body-md value">{{LastOrder}}</p>
+			<p style="margin: 0" class="body-md title ng-star-inserted">Poslednja porudzbina:</p>
+			<p style="margin: 0" class="body-md bold">{{LastOrder}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p class="body-md title ng-star-inserted">Isporuceno:</p>
-			<p class="body-md value">{{Delivered}}</p>
+			<p style="margin: 0" class="body-md title ng-star-inserted">Isporuceno:</p>
+			<p style="margin: 0" class="body-md bold">{{Delivered}}</p>
 		</div>
 	</div>
 </div>
