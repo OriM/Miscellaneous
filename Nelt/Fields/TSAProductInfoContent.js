@@ -26,32 +26,32 @@ var html = `
 	</style>
 	<div class="nelt-item-ver">
 		<div class="nelt-one-liner">
-			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">SKU:</p>
-			<p style="margin: 0" class="body-md bold">{{Sku}}</p>
+			<p style="margin: 0" class="body-lg color-dimmed ng-star-inserted">SKU:</p>
+			<p style="margin: 0" class="body-lg bold">{{Sku}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Cena:</p>
-			<p style="margin: 0" class="body-md bold">{{Price}}</p>
+			<p style="margin: 0" class="body-lg color-dimmed ng-star-inserted">Cena:</p>
+			<p style="margin: 0" class="body-lg bold">{{Price}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Cena sa PDV-om:</p>
-			<p style="margin: 0" class="body-md bold">{{PriceVAT}}</p>
+			<p style="margin: 0" class="body-lg color-dimmed ng-star-inserted">Cena sa PDV-om:</p>
+			<p style="margin: 0" class="body-lg bold">{{PriceVAT}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Zalihe:</p>
-			<p style="margin: 0" class="body-md bold">{{Supplies}}</p>
+			<p style="margin: 0" class="body-lg color-dimmed ng-star-inserted">Zalihe:</p>
+			<p style="margin: 0" class="body-lg bold">{{Supplies}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Pakovanje:</p>
-			<p style="margin: 0" class="body-md bold">{{Packaging}}</p>
+			<p style="margin: 0" class="body-lg color-dimmed ng-star-inserted">Pakovanje:</p>
+			<p style="margin: 0" class="body-lg bold">{{Packaging}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Poslednja porudzbina:</p>
-			<p style="margin: 0" class="body-md bold">{{LastOrder}}</p>
+			<p style="margin: 0" class="body-lg color-dimmed ng-star-inserted">Poslednja porudzbina:</p>
+			<p style="margin: 0" class="body-lg bold">{{LastOrder}}</p>
 		</div>
 		<div class="nelt-one-liner">
-			<p style="margin: 0" class="body-md color-dimmed ng-star-inserted">Isporuceno:</p>
-			<p style="margin: 0" class="body-md bold">{{Delivered}}</p>
+			<p style="margin: 0" class="body-lg color-dimmed ng-star-inserted">Isporuceno:</p>
+			<p style="margin: 0" class="body-lg bold">{{Delivered}}</p>
 		</div>
 	</div>
 </div>
