@@ -10,7 +10,7 @@ var html = `
 			text-overflow: ellipsis;
 			margin: 0;
 		"
-		class="body-3xl title"
+		class="color-user-primary title-3xl"
 	>
 		{{CardTitle}}
 	</h3>
